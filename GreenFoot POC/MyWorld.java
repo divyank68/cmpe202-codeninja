@@ -17,8 +17,10 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-        
+        Birdi player = new Birdi();
         Birdi butterfly = new Birdi();
+        player2 pla = new player2();
         addObject(butterfly, 100 , getHeight()/2);
+        addObject(pla , 200, getHeight()/2);
     }
 }

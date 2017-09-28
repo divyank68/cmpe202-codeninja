@@ -17,16 +17,43 @@ public class Birdi extends Actor
     public void act() 
     {
         // Add your action code here.
-        setLocation(getX(), getY()+dy);
-        if (Greenfoot.isKeyDown("up")==true){
-            dy = -10;
+        if(!intersects((Actor)getWorld().getObjects(player2.class).get(0)))
+        {
+            setLocation(getX(), getY()+dy);
+            
         }
-        if (Greenfoot.isKeyDown("left")==true){
-            setLocation(getX()-1, getY());
+       
+        if (Greenfoot.isKeyDown("up")==true){
+            if(!intersects((Actor)getWorld().getObjects(player2.class).get(0))){
+            dy = -10;
+            }
+            else 
+            {
+                  dy =-10;
+            }
+        }
+        if (Greenfoot.isKeyDown("left")==true ){
+           if(!intersects((Actor)getWorld().getObjects(player2.class).get(0))){
+                setLocation(getX()-1, getY());
+            }
+            else 
+            {
+                //setLocation(getX()+1, getY());
+            }
+            
         }
         
         if (Greenfoot.isKeyDown("right")==true){
-            setLocation(getX()+1, getY());
+           // setLocation(getX()+1, getY());
+            if(!intersects((Actor)getWorld().getObjects(player2.class).get(0))){
+                setLocation(getX()+1, getY());
+            }
+            else 
+            {
+                //setLocation(getX()-1, getY());
+            }
+            
+        
         }
         
         dy +=g;
