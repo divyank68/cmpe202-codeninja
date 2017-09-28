@@ -23,7 +23,7 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-        snake snake =  new  snake();
+        snake snake =  new snake();
         addObject(snake, 293, 169);
     }
 }

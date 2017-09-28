@@ -1,0 +1,15 @@
+#Greenfoot properties
+#Thu Sep 28 00:36:45 PDT 2017
+class.player1.image=person.png
+class.Bullet.image=beeper.png
+mainWindow.width=850
+project.charset=UTF-8
+version=3.0.0
+class.player1.superclass=greenfoot.Actor
+world.lastInstantiated=myworld
+class.myworld.superclass=greenfoot.World
+mainWindow.y=40
+class.myworld.image=rivets.jpg
+mainWindow.x=40
+class.Bullet.superclass=greenfoot.Actor
+mainWindow.height=600
