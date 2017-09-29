@@ -1,3 +1,4 @@
 # cmpe202-codeninja
-Future place for an amazing online game based on the latest javascript gaming engine.!!! Believe it!
-A small change.
+Hold your breaths for the world's most fun and awesome game (allegedly)!! Coming soon.
+
+The CodeNinja Dojo Masters are: Divyank Shukla, Jay Desai, Shantanu Gupta, Utsav Jain!
