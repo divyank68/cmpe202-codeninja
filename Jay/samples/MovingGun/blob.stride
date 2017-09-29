@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="blob" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields>
+        <variable access="private" type="int" type-java="int" name="life" value="Greenfoot.getRandomNumber(10)+20" value-java="Greenfoot.getRandomNumber(10) + 20" enable="true"/>
+    </fields>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the blob wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="move(10)" expression-java="move(10)" enable="true"/>
+                <assign dest="life" dest-java="life" src="life-1" src-java="life - 1" enable="true"/>
+                <if condition="life==0" condition-java="life == 0" enable="true">
+                    <ifStatements>
+                        <call expression="getWorld().addObject(new splat(),getX(),getY())" expression-java="getWorld().addObject( new splat(), getX(), getY())" enable="true"/>
+                        <call expression="getWorld().removeObject(this)" expression-java="getWorld().removeObject(this)" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>
