@@ -1,5 +1,5 @@
 #Greenfoot project file
-class.HealthBar.superclass=greenfoot.Actor
+class.HealthBar.superclass=Man
 class.Latar.superclass=greenfoot.World
 class.Man.image=image7.jpg
 class.Man.superclass=greenfoot.Actor
@@ -16,10 +16,10 @@ editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
 editor.fx.0.y=0
-mainWindow.height=744
-mainWindow.width=1378
-mainWindow.x=-8
-mainWindow.y=-8
+mainWindow.height=731
+mainWindow.width=1249
+mainWindow.x=62
+mainWindow.y=19
 package.numDependencies=3
 package.numTargets=3
 project.charset=UTF-8
