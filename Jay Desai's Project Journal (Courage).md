@@ -26,3 +26,10 @@ Week-2:
    that we will get more materials in Greenfoot engine. So, we wanted to finalize our engine to Greenfoot. At first, we 
    were not much confident about the change but I gave courage to accept the change and at last we were able to adept to 
    the new technology.     
+
+Week-3:
+
+* In earlier weeks, we were able to decide the gaming platform and were able to develop sample codes that can be reusable 
+  in future. In this week, we had a bigger challenge of choosing either - to go for our main character design or to learn 
+  about Design Patterns. As, Design Patterns are integral part of this project, I made my team focus on learning Design 
+  patterns. At the end of the week we were able to develop sample codes in Design patterns.
