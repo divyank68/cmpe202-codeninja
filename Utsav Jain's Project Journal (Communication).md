@@ -5,3 +5,6 @@ My target for the next week is to have a daily conversation about the project pr
 
 #Week 2
 The team's communication was robust. All members were comfortably able to interact with each other regarding their concerns. Slack was used for project communication. The Kanban board was used for this week to clearly communicate the tasks assigned to individuals and all the problems were dealt with. 
+
+#Week 3
+This week the communication via GitHub based project Kanban board was plenty sufficient. Everyone was able to decide on the issues and were assigned issues accordingly. The new phase of design patterns is starting in the project. This will also mean more ingeration tasks will come up. I forcast that the task of maintaining good communicaiton lines will increase and I will have to work harder to keep track that the team members are effectively speaking to each other.
