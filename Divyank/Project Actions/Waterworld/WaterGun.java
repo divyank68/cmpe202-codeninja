@@ -15,6 +15,14 @@ public class WaterGun extends Actor
     public void act() 
     {
         // Add your action code here.
+        if(Greenfoot.isKeyDown("left"))
+        {
+            setRotation(getRotation()-5);
+        }
+        if(Greenfoot.isKeyDown("right"))
+        {
+            setRotation(getRotation()+5);
+        }
         if("space".equals(Greenfoot.getKey()))
         {
             Waterattack();
@@ -22,6 +30,8 @@ public class WaterGun extends Actor
     }  
     public void Waterattack()
     {
-        getWorld().addObject(new splash(),getX(),getY());
+        splash sp1=new splash();
+        getWorld().addObject(sp1,getX(),getY());
+        sp1.setRotation(getRotation());
     }
 }
