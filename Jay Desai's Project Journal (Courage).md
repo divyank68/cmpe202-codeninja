@@ -33,3 +33,11 @@ Week-3:
   in future. In this week, we had a bigger challenge of choosing either - to go for our main character design or to learn 
   about Design Patterns. As, Design Patterns are integral part of this project, I made my team focus on learning Design 
   patterns. At the end of the week we were able to develop sample codes in Design patterns.
+
+Week-4:
+
+* In this week, we had a challenge to keep up the work going as we had our midterm exams.I made the priority list to be 
+  followed and gave courage to work whenever we get time from reading and exams. Also, this was the last week of kanban 
+  and we were left with the important issues like individual map designs, identify patterns to be implemented, design 
+  our main character, started building individual UML diagrams. So, I have cleared the tasks that are pending and 
+  communicated the required efforts. Because of this planning, we were able to work on most of the issues.    
