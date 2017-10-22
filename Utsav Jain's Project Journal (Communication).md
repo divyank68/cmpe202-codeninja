@@ -8,3 +8,6 @@ The team's communication was robust. All members were comfortably able to intera
 
 #Week 3
 This week the communication via GitHub based project Kanban board was plenty sufficient. Everyone was able to decide on the issues and were assigned issues accordingly. The new phase of design patterns is starting in the project. This will also mean more ingeration tasks will come up. I forcast that the task of maintaining good communicaiton lines will increase and I will have to work harder to keep track that the team members are effectively speaking to each other.
+
+#Week 4 
+Everyone on the team was able to work well together. The group was in harmony. Collaboration was a little of because of the auspicious occasion of Diwali and thus the overall productivity was affected. However, the band is back together. We are all again on the same page about what to do and how to procede further. Everyone is in sync about what other team members are doing about in the project.
