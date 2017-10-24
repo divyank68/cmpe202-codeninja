@@ -32,6 +32,7 @@ public class MyWorld extends World
         Bricks b8 =  new  Bricks();
         Bricks b9 =  new  Bricks();
         Bricks b10 =  new  Bricks();
+        ninja ninja1 =  new  ninja();
         addObject(b1, 400, 280);
         addObject(b2, 200, 280);
         addObject(b3, 300, 190);
@@ -41,5 +42,6 @@ public class MyWorld extends World
         addObject(b8, 178, 100);
         addObject(b9, 114, 100);
         addObject(b10, 50, 100);
+        addObject(ninja1, 25, 335);
     }
 }
