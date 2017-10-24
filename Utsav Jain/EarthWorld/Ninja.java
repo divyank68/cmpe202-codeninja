@@ -19,8 +19,21 @@ public class Ninja extends Actor
         image.scale(x,y);
         setImage(image);
     }
+    public void move(){
+        int x, y;
+        x=this.getX();
+        y=this.getY();
+        
+        if(Greenfoot.isKeyDown("left")){
+            move(-2);
+        }
+        if(Greenfoot.isKeyDown("right")){
+            move(2);
+        }
+    }
     public void act() 
     {
         // Add your action code here.
+        move();
     }    
 }
