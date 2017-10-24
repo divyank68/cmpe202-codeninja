@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="MyWorld" extends="World" extends-java="World" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields/>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class MyWorld.</javadoc>
+            <params/>
+            <throws/>
+            <delegate target="super" params="600,400,1" params-java="600, 400, 1"/>
+            <body>
+                <call expression="prepare()" expression-java="prepare()" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="public" type="void" type-java="void" name="prepare" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Bricks" type-java="Bricks" name="b1" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <variable type="Bricks" type-java="Bricks" name="b2" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <variable type="Bricks" type-java="Bricks" name="b3" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <variable type="Bricks" type-java="Bricks" name="b4" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <variable type="Bricks" type-java="Bricks" name="b5" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <variable type="Bricks" type-java="Bricks" name="b6" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <variable type="Bricks" type-java="Bricks" name="b7" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <variable type="Bricks" type-java="Bricks" name="b8" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <variable type="Bricks" type-java="Bricks" name="b9" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <variable type="Bricks" type-java="Bricks" name="b10" value="new Bricks()" value-java=" new Bricks()" enable="true"/>
+                <call expression="addObject(b1,400,280)" expression-java="addObject(b1, 400, 280)" enable="true"/>
+                <call expression="addObject(b2,200,280)" expression-java="addObject(b2, 200, 280)" enable="true"/>
+                <call expression="addObject(b3,300,190)" expression-java="addObject(b3, 300, 190)" enable="true"/>
+                <call expression="addObject(b4,500,100)" expression-java="addObject(b4, 500, 100)" enable="true"/>
+                <call expression="addObject(b5,435,100)" expression-java="addObject(b5, 435, 100)" enable="true"/>
+                <call expression="addObject(b6,370,100)" expression-java="addObject(b6, 370, 100)" enable="true"/>
+                <call expression="addObject(b8,178,100)" expression-java="addObject(b8, 178, 100)" enable="true"/>
+                <call expression="addObject(b9,114,100)" expression-java="addObject(b9, 114, 100)" enable="true"/>
+                <call expression="addObject(b10,50,100)" expression-java="addObject(b10, 50, 100)" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
