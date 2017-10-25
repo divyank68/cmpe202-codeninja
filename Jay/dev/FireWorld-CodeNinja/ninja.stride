@@ -1,19 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<class name="ninja" extends="Actor" enable="true" strideversion="1">
+<class name="ninja" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
     <javadoc xml:space="preserve"/>
     <imports>
         <import target="java.util.*" enable="true"/>
         <import target="greenfoot.*" enable="true"/>
     </imports>
     <implements/>
-    <fields/>
+    <fields>
+        <variable access="private" type="int" type-java="int" name="speed" value="3" value-java="3" enable="true"/>
+    </fields>
     <constructors/>
     <methods>
-        <method access="public" type="void" name="act" enable="true">
+        <method access="public" type="void" type-java="void" name="act" enable="true">
             <javadoc xml:space="preserve">Act - do whatever the ninja wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
             <params/>
             <throws/>
-            <body/>
+            <body>
+                <if condition="Greenfoot.isKeyDown(&quot;down&quot;)" condition-java="Greenfoot.isKeyDown(&quot;down&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="setRotation(getRotation()-5)" expression-java="setRotation(getRotation() - 5)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;up&quot;)" condition-java="Greenfoot.isKeyDown(&quot;up&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="setRotation(getRotation()+5)" expression-java="setRotation(getRotation() + 5)" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="&quot;space&quot;.equals(Greenfoot.getKey())" condition-java="&quot;space&quot;.equals(Greenfoot.getKey())" enable="true">
+                    <ifStatements>
+                        <call expression="fire()" expression-java="fire()" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;right&quot;)" condition-java="Greenfoot.isKeyDown(&quot;right&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="moveRight()" expression-java="moveRight()" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;left&quot;)" condition-java="Greenfoot.isKeyDown(&quot;left&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="moveLeft()" expression-java="moveLeft()" enable="true"/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="private" type="void" type-java="void" name="fire" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="blob" type-java="blob" name="blob1" value="new blob()" value-java=" new blob()" enable="true"/>
+                <call expression="getWorld().addObject(blob1,getX(),getY())" expression-java="getWorld().addObject(blob1, getX(), getY())" enable="true"/>
+                <call expression="blob1.setRotation(getRotation())" expression-java="blob1.setRotation(getRotation())" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="moveRight" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="setLocation(getX()+speed,getY())" expression-java="setLocation(getX() + speed, getY())" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="moveLeft" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <call expression="setLocation(getX()-speed,getY())" expression-java="setLocation(getX() - speed, getY())" enable="true"/>
+            </body>
         </method>
     </methods>
 </class>
