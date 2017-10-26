@@ -43,7 +43,20 @@
                         <call expression="moveLeft()" expression-java="moveLeft()" enable="true"/>
                     </ifStatements>
                 </if>
-                <call expression="fall()" expression-java="fall()" enable="true"/>
+                <if condition="onGround()||onBaseGround()" condition-java="onGround() || onBaseGround()" enable="true">
+                    <ifStatements>
+                        <assign dest="vspeed" dest-java="vspeed" src="0" src-java="0" enable="true"/>
+                        <blank/>
+                    </ifStatements>
+                    <else>
+                        <call expression="fall()" expression-java="fall()" enable="true"/>
+                    </else>
+                </if>
+                <if condition="Greenfoot.isKeyDown(&quot;shift&quot;)" condition-java="Greenfoot.isKeyDown(&quot;shift&quot;)" enable="true">
+                    <ifStatements>
+                        <call expression="jump()" expression-java="jump()" enable="true"/>
+                    </ifStatements>
+                </if>
             </body>
         </method>
         <method access="private" type="void" type-java="void" name="fire" enable="true">
@@ -88,6 +101,24 @@
             <body>
                 <assign dest="under" dest-java="under" src="getOneObjectAtOffset(0,getImage().getHeight()/2,Bricks.class)" src-java="getOneObjectAtOffset(0, getImage().getHeight() / 2, Bricks.class)" enable="true"/>
                 <return value="under!=null" value-java="under != null" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="boolean" type-java="boolean" name="onBaseGround" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <assign dest="under" dest-java="under" src="getOneObjectAtOffset(0,getImage().getHeight()/2,BaseBrick.class)" src-java="getOneObjectAtOffset(0, getImage().getHeight() / 2, BaseBrick.class)" enable="true"/>
+                <return value="under!=null" value-java="under != null" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="jump" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <assign dest="vspeed" dest-java="vspeed" src="-5" src-java="-5" enable="true"/>
+                <call expression="fall()" expression-java="fall()" enable="true"/>
             </body>
         </method>
     </methods>

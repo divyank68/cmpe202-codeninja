@@ -31,7 +31,16 @@ public class ninja extends Actor
         if (Greenfoot.isKeyDown("left")) {
             moveLeft();
         }
-        fall();
+        if (onGround() || onBaseGround()) {
+            vspeed = 0;
+            
+        }
+        else {
+            fall();
+        }
+        if (Greenfoot.isKeyDown("shift")) {
+            jump();
+        }
     }
 
     /**
@@ -76,5 +85,23 @@ public class ninja extends Actor
     {
         under = getOneObjectAtOffset(0, getImage().getHeight() / 2, Bricks.class);
         return under != null;
+    }
+
+    /**
+     * 
+     */
+    public boolean onBaseGround()
+    {
+        under = getOneObjectAtOffset(0, getImage().getHeight() / 2, BaseBrick.class);
+        return under != null;
+    }
+
+    /**
+     * 
+     */
+    public void jump()
+    {
+        vspeed = -5;
+        fall();
     }
 }
