@@ -23,14 +23,29 @@ public class Ninja extends Actor
         int x, y;
         x=this.getX();
         y=this.getY();
-        
-        if(Greenfoot.isKeyDown("left")){
-            move(-2);
-        }
-        if(Greenfoot.isKeyDown("right")){
-            move(2);
+       if(isBarrier()){
+            if(Greenfoot.isKeyDown("left")){
+                move(-2);
+            }
+            if(Greenfoot.isKeyDown("right")){
+                move(2);
+            }
         }
     }
+    public boolean isBarrier(){
+    Actor mb;
+    Actor tw;
+    Actor w;
+    mb = getOneObjectAtOffset(18,18, MovingBrick.class);
+    tw = getOneObjectAtOffset(18,18, TempWall.class);
+    w = getOneObjectAtOffset(18,18, wall.class);
+        if(mb != null || tw !=null || w !=null){
+            return false;    
+        }
+        else
+            return true;
+    }
+    
     public void act() 
     {
         // Add your action code here.
