@@ -8,6 +8,8 @@ import greenfoot.*;
 public class ninja extends Actor
 {
     private int speed = 3;
+    private Actor under;
+    private int vspeed = 0;
 
     /**
      * Act - do whatever the ninja wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -29,6 +31,7 @@ public class ninja extends Actor
         if (Greenfoot.isKeyDown("left")) {
             moveLeft();
         }
+        fall();
     }
 
     /**
@@ -55,5 +58,23 @@ public class ninja extends Actor
     public void moveLeft()
     {
         setLocation(getX() - speed, getY());
+    }
+
+    /**
+     * 
+     */
+    public void fall()
+    {
+        setLocation(getX(), getY() + vspeed);
+        vspeed = vspeed + 2;
+    }
+
+    /**
+     * 
+     */
+    public boolean onGround()
+    {
+        under = getOneObjectAtOffset(0, getImage().getHeight() / 2, Bricks.class);
+        return under != null;
     }
 }
