@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Tue Oct 24 22:01:13 PDT 2017
+#Thu Oct 26 18:45:44 PDT 2017
 readme.name=@README
 target2.name=FlappyWorld
 simulation.speed=50
@@ -8,8 +8,8 @@ target2.showInterface=false
 class.FlappyBird.image=flappy-bird-clipart-7.png
 target1.type=ClassTarget
 target2.y=0
-target2.x=0
 package.numTargets=2
+target2.x=0
 target1.height=50
 class.FlappyWorld.superclass=greenfoot.World
 target1.y=0
