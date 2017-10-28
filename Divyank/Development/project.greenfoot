@@ -12,6 +12,7 @@ class.WaterWorld.superclass=greenfoot.World
 dependency1.from=Splash
 dependency1.to=Fish
 dependency1.type=UsesDependency
+<<<<<<< HEAD
 dependency2.from=Splash
 dependency2.to=Starfish
 dependency2.type=UsesDependency
@@ -27,6 +28,11 @@ dependency5.type=UsesDependency
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=627
+>>>>>>> e97f411210191d36ea8cb26ef889ea59c957729b
 editor.fx.0.y=0
 mainWindow.height=600
 mainWindow.width=850

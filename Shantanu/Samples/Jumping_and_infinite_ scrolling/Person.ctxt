@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Person
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Person\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=void\ checkKeys()
+comment3.params=
+comment3.target=void\ jump()
+comment3.text=\ public\ void\ checkFall()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ if(onGround())\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ vSpeed\ \=\ 0;\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ else\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ fall();\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ public\ boolean\ onGround()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ Actor\ under\ \=\ getOneObjectAtOffset\ (\ 0,\ getHeight()/2,\ Ground.class);\r\n\ \ \ \ \ \ \ \ return\ under\ \!\=\ null;\r\n}
+comment4.params=
+comment4.target=void\ fall()
+comment5.params=
+comment5.target=void\ shoot()
+numComments=6

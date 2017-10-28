@@ -14,6 +14,18 @@ public class Person extends Background1
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        checkKeys();
+    } 
+    
+    public void checkKeys()
+    {
+        if(Greenfoot.isKeyDown("space"))
+        {
+            shoot();
+        }
+    }
+    public void shoot()
+    {
+        getWorld().addObject(new Bullet(), getX(), getY());
+    }
 }
