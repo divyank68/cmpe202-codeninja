@@ -48,7 +48,7 @@ public class ninja extends Actor
      */
     private void fire()
     {
-        blob blob1 =  new  blob();
+        blob blob1 =  new blob();
         getWorld().addObject(blob1, getX(), getY());
         blob1.setRotation(getRotation());
     }

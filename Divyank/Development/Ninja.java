@@ -29,6 +29,14 @@ public class Ninja extends Actor
         {
             y=-10;
         }
+        if(Greenfoot.isKeyDown("right")==true)
+        {
+            move(5);
+        }
+        if(Greenfoot.isKeyDown("left")==true)
+        {
+            move(-5);
+        }
         y=y+g;
         
     }    

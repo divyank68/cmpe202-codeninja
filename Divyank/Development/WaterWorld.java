@@ -18,6 +18,24 @@ public class WaterWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         Ninja n = new Ninja();
-        addObject(n, 100, 180);
+        Fish f1 = new Fish();
+        Fish f2 = new Fish();
+        Fish f3 = new Fish();
+        Fish f4 = new Fish();
+        Fish f5 = new Fish();
+        Fish f6 = new Fish();
+        Starfish f7 = new Starfish();
+        Starfish f8 = new Starfish();
+        Starfish f9 = new Starfish();
+        Starfish f10 = new Starfish();
+        addObject(n, 10, 180);
+        addObject(f1, 80, 150);
+        addObject(f2, 150, 300);
+        addObject(f3, 230, 400);
+        addObject(f4, 350, 350);
+        addObject(f7, 500, 10);
+        addObject(f8, 600, 80);
+        addObject(f9, 450, 350);
+        addObject(f10, 350, 350);
     }
 }
