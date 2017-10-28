@@ -40,4 +40,11 @@ Week-4:
   followed and gave courage to work whenever we get time from reading and exams. Also, this was the last week of kanban 
   and we were left with the important issues like individual map designs, identify patterns to be implemented, design 
   our main character, started building individual UML diagrams. So, I have cleared the tasks that are pending and 
-  communicated the required efforts. Because of this planning, we were able to work on most of the issues.    
+  communicated the required efforts. Because of this planning, we were able to work on most of the issues.   
+
+Week-5:
+
+* This was one of the most important week as we are moving from kanban to Scrum. So,to adept the changes and to deliver 
+   good work in this week, I had made sure that team is aware of the scrum methodologies, approaches in scrum, difference 
+   between kanban and scrum etc. Also, in this week we had decided to get head start in terms of coding exercise so that 
+   we can get enough time for extra activities. For that, I made a worksheet so that we can trace our work and complete it in time.   
