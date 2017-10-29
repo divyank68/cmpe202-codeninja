@@ -11,3 +11,6 @@ This week the communication via GitHub based project Kanban board was plenty suf
 
 #Week 4 
 Everyone on the team was able to work well together. The group was in harmony. Collaboration was a little of because of the auspicious occasion of Diwali and thus the overall productivity was affected. However, the band is back together. We are all again on the same page about what to do and how to procede further. Everyone is in sync about what other team members are doing about in the project.
+
+#Week 5
+This week we started scrum. It Scrum is part of the Agile movement. Agile is a response to the failure of the dominant software development project management paradigms (including waterfall) and borrows many principles from lean manufacturing. It was hard for the team to understand the concepts of the scrum board and thus it was a bit of a learning curve.
