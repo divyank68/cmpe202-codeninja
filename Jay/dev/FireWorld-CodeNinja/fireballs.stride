@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="fireballs" extends="Actor" extends-java="Actor" enable="true" strideversion="1">
+    <javadoc xml:space="preserve"/>
+    <imports>
+        <import target="java.util.*" enable="true"/>
+        <import target="greenfoot.*" enable="true"/>
+    </imports>
+    <implements/>
+    <fields>
+        <variable access="private" type="int" type-java="int" name="life" value="Greenfoot.getRandomNumber(10)+20" value-java="Greenfoot.getRandomNumber(10) + 20" enable="true"/>
+    </fields>
+    <constructors/>
+    <methods>
+        <method access="public" type="void" type-java="void" name="act" enable="true">
+            <javadoc xml:space="preserve">Act - do whatever the fireballs wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.</javadoc>
+            <params/>
+            <throws/>
+            <body>
+                <if condition="getX()==70" condition-java="getX() == 70" enable="true">
+                    <ifStatements/>
+                    <else>
+                        <call expression="move(10)" expression-java="move(10)" enable="true"/>
+                        <assign dest="life" dest-java="life" src="life-1" src-java="life - 1" enable="true"/>
+                    </else>
+                </if>
+            </body>
+        </method>
+    </methods>
+</class>
