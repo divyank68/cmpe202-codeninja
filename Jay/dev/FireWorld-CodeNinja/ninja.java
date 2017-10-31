@@ -10,6 +10,7 @@ public class ninja extends Actor
     private int speed = 3;
     private Actor under;
     private int vspeed = 0;
+    private int fireballs = 0;
 
     /**
      * Act - do whatever the ninja wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -41,6 +42,7 @@ public class ninja extends Actor
         if (Greenfoot.isKeyDown("shift")) {
             jump();
         }
+        getFireballs();
     }
 
     /**
@@ -48,9 +50,9 @@ public class ninja extends Actor
      */
     private void fire()
     {
-        blob blob1 =  new blob();
-        getWorld().addObject(blob1, getX(), getY());
-        blob1.setRotation(getRotation());
+        fireballs suri1 =  new  fireballs();
+        getWorld().addObject(suri1, getX(), getY());
+        suri1.setRotation(getRotation());
     }
 
     /**
@@ -103,5 +105,21 @@ public class ninja extends Actor
     {
         vspeed = -5;
         fall();
+    }
+
+    /**
+     * 
+     */
+    public void getFireballs()
+    {
+        if (isTouching(fireballs.class)) {
+            if (fireballs == 3) {
+                removeTouching(fireballs.class);
+                fireballs = fireballs + 1;
+            }
+            else {
+                fireballs = fireballs + 1;
+            }
+        }
     }
 }
