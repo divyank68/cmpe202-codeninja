@@ -18,15 +18,16 @@ public class alli extends Actor
     public void act() 
     {
         // Add your action code here.
-        move(2);
+        move(1);
         if(Greenfoot.isKeyDown("down")){
             turn(-2);
         }
         if(Greenfoot.isKeyDown("up")){
         turn(2);
         }
-        //apl a = new apl();
-        boolean a = !getObjectsInRange(15, null).isEmpty();
+        //apl ap = getOneIntersectingObject(null);
+        boolean a = !getNeighbours(10,true, null).isEmpty();
+        //ap = getOneIntersectingObject(null);
         if(a){
             System.out.println(counter++);
         }

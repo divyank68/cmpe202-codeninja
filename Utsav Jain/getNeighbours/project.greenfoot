@@ -1,6 +1,6 @@
 #Greenfoot project file
 class.MyWorld.superclass=greenfoot.World
-class.alli.image=alligator.png
+class.alli.image=tux.png
 class.alli.superclass=greenfoot.Actor
 class.apl.image=apple2.png
 class.apl.superclass=greenfoot.Actor
@@ -13,13 +13,13 @@ dependency2.type=UsesDependency
 dependency3.from=MyWorld
 dependency3.to=apl
 dependency3.type=UsesDependency
-editor.fx.0.height=1047
-editor.fx.0.width=974
-editor.fx.0.x=953
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
 editor.fx.0.y=0
 mainWindow.height=774
 mainWindow.width=974
-mainWindow.x=-7
+mainWindow.x=9
 mainWindow.y=0
 package.numDependencies=3
 package.numTargets=3
