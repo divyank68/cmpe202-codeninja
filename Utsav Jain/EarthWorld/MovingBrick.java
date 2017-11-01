@@ -12,7 +12,7 @@ public class MovingBrick extends Actor
      * Act - do whatever the MovingBrick wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    int counter= 0;
+    int counter= 1;
      public MovingBrick(){
     }
     public MovingBrick(int x, int y){
@@ -20,29 +20,50 @@ public class MovingBrick extends Actor
         image.scale(x,y);
         setImage(image);
     }
-    void move(){
-        int  x, y;
-        x= getX();
-        y= getY();
+    void moveing(){
         
-        if(counter>=0&&counter<20){
-            setLocation(x++,y);
+        /*if(counter>=0&&counter<20){
+            move(2);
             counter--;
         }
         else{
-            setLocation(x--,y);
+            move(-2);
             if(counter>=-20){
             counter=20;
             }
-        }
+        }*/
+                    if(counter<50){
+                     move(2);
+                    }
+                    else{
+                        if(counter<100){
+                            move(-2);
+                        }
+                        else{
+                            counter =0;
+                        }
+                    }
+                    counter++;
+                                       
     }
     public void act() 
     {
-        move();
-        int  x, y;
-        x= getX();
-        y= getY();
-         this.setLocation(x++,y);
+        moveing();
+        
+        /*if(counter<50){
+                     move(2);
+                    }
+                    else{
+                        if(counter<100){
+                            move(-2);
+                        }
+                        else{
+                            counter =0;
+                        }
+                    }
+                    counter++;
+                */       
+      //   //this.setLocation(x++,y);
         // Add your action code here.
     }    
 }

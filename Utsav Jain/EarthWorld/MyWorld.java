@@ -24,12 +24,14 @@ public class MyWorld extends World
         wall w5 = new wall(30,150);//390,600
         TempWall tw1 = new TempWall(30,150);
         TempWall tw2 = new TempWall(30,110);
+        wall borderDown = new wall(800,30);
         Jumpe j = new Jumpe(100,100);
         Bamboo b = new Bamboo(200,200);
         Ninja n = new Ninja(50,100);
         MovingBrick mb1 = new MovingBrick(150,30);
         MovingBrick mb2 = new MovingBrick(150,30);
         
+        addObject(borderDown, 400,600);
         addObject(w1, 50,390);
         addObject(tw1,200,160);
         addObject(tw2, 400, 50);
@@ -37,9 +39,9 @@ public class MyWorld extends World
         addObject(w2, 150, 230);
         addObject(w3, 600, 230);
         addObject(w4, 500,100);
-        addObject(j, 736,567);
-        addObject(b, 560, 511);
-        addObject(n, 47,527);
+        addObject(j, 736,534);
+        addObject(b, 560, 500);
+        addObject(n, 50,533);
         addObject(mb1, 318,390);
         addObject(mb2, 650,390);
         prepare();
