@@ -22,19 +22,21 @@ public class MyWorld extends World
      */
     public void prepare()
     {
-        Bricks b1 =  new Bricks();
-        Bricks b2 =  new Bricks();
-        Bricks b3 =  new Bricks();
-        Bricks b4 =  new Bricks();
-        Bricks b5 =  new Bricks();
-        Bricks b6 =  new Bricks();
-        Bricks b7 =  new Bricks();
-        Bricks b8 =  new Bricks();
-        Bricks b9 =  new Bricks();
-        Bricks b10 =  new Bricks();
-        ninja ninja1 =  new ninja();
-        BaseBrick bb1 =  new BaseBrick();
-        fireballs fb1 =  new fireballs();
+        Bricks b1 =  new  Bricks();
+        Bricks b2 =  new  Bricks();
+        Bricks b3 =  new  Bricks();
+        Bricks b4 =  new  Bricks();
+        Bricks b5 =  new  Bricks();
+        Bricks b6 =  new  Bricks();
+        Bricks b7 =  new  Bricks();
+        Bricks b8 =  new  Bricks();
+        Bricks b9 =  new  Bricks();
+        Bricks b10 =  new  Bricks();
+        Bricks b11 =  new  Bricks();
+        ninja ninja1 =  new  ninja();
+        BaseBrick bb1 =  new  BaseBrick();
+        fireballs fb1 =  new  fireballs();
+        Shuriken s1 =  new  Shuriken();
         addObject(b1, 400, 280);
         addObject(b2, 200, 280);
         addObject(b3, 300, 190);
@@ -47,5 +49,7 @@ public class MyWorld extends World
         addObject(ninja1, 25, 335);
         addObject(bb1, 294, 378);
         addObject(fb1, 70, 61);
+        addObject(s1, 550, 260);
+        addObject(b11, 550, 280);
     }
 }

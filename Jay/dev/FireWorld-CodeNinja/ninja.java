@@ -11,6 +11,7 @@ public class ninja extends Actor
     private Actor under;
     private int vspeed = 0;
     private int fireballs = 0;
+    private int shuriken = 0;
 
     /**
      * Act - do whatever the ninja wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -43,6 +44,7 @@ public class ninja extends Actor
             jump();
         }
         getFireballs();
+        getShriken();
     }
 
     /**
@@ -120,6 +122,18 @@ public class ninja extends Actor
             else {
                 fireballs = fireballs + 1;
             }
+        }
+    }
+
+    /**
+     * 
+     */
+    public void getShriken()
+    {
+        if (isTouching(Shuriken.class)) {
+            removeTouching(Shuriken.class);
+            shuriken = shuriken + 1;
+            
         }
     }
 }
