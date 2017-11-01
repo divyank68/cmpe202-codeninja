@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
+    GreenfootSound myMusic= new GreenfootSound("Skip_-_01_-_HyperSpaceAdventure.mp3");
     private Background1[] bg = new Background1[3];
     
     private final int LEFT_BOUNDARY = -300;
@@ -39,6 +40,7 @@ public class MyWorld extends World
     }
     public void act()
     {
+        myMusic.play();
         if(Greenfoot.isKeyDown("left")) 
         {
             scroll(5);
