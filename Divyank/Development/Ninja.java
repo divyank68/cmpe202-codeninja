@@ -39,6 +39,7 @@ public class Ninja extends Actor
         }
         y=y+g;
         checkKeys();
+        checkObstacle();
     }
     public void checkKeys()
     {
@@ -47,4 +48,12 @@ public class Ninja extends Actor
             getWorld().addObject(new Splash(),getX(),getY());
         }
     }
+    public void checkObstacle()
+    {
+        Actor obs=getOneIntersectingObject(Fish.class);
+        if(obs!=null)
+        {
+            move(-30);
+        }
+    }   
 }
