@@ -13,7 +13,7 @@ public class Ninja extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     int dy=0;
-    int g =1;
+    int g =-2;
      public Ninja(){
     }
     public Ninja(int x, int y){
@@ -48,9 +48,9 @@ public class Ninja extends Actor
     
     
     public void move(){
-        int x, y;
+        /*int x, y;
         x=this.getX();
-        y=this.getY();
+        y=this.getY();*/
        //if(isTouching(null)){
             if(Greenfoot.isKeyDown("left")){
                 move(-2);  
@@ -62,9 +62,12 @@ public class Ninja extends Actor
             }
             if(Greenfoot.isKeyDown("up")){
                 //Add Conditionn for isTouchingGround.
-                //if(isTouching(null)){
-                    dy=-3;
-                    setLocation(getX(), getY()+dy);
+               // if(!isTouching(null)){
+                    dy=3;
+                    setLocation(getX(), getY()-dy);
+                    //if(!isTouching(null)){
+                    //        setLocation(getX(), getY()+dy);
+                  //  }
                 //}
             }
         
@@ -83,11 +86,11 @@ public class Ninja extends Actor
             //potential for momento design pattern
             
         }*/
-       if (Greenfoot.isKeyDown("up"))
+       /*if (Greenfoot.isKeyDown("up"))
             {
                if (getOneIntersectingObject(wall.class) != null) dy=0;
                 dy= - 6; 
-            }
+            }*/
     }
         public boolean isBarrier(){
             Actor mb;
@@ -104,11 +107,17 @@ public class Ninja extends Actor
     }
     public void fall (){
         dy = dy+g;
-        setLocation(getX(), getY()+dy);
+        setLocation(getX(), getY()-dy);
+         //if (getOneIntersectingObject(null) != null) setLocation(getX(), getY()+dy);
+        
     }
     public void checkedFall(){
-              if(!isTouching(null)){
+        if(!isTouching(null)){
             fall();
+        }
+        else{
+        //opposite of fall
+        //setLocation(getX(), getY()+dy);
         }
     }
     
