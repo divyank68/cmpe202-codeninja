@@ -21,7 +21,7 @@ public class MyWorld extends World
         wall w2 = new wall(300, 30);
         wall w3 = new wall(400,30);
         wall w4 = new wall(600,30);
-        wall w5 = new wall(30,150);//390,600
+        TempWall w5 = new TempWall(30,150);//390,600
         TempWall tw1 = new TempWall(30,150);
         TempWall tw2 = new TempWall(30,110);
         wall borderDown = new wall(800,30);

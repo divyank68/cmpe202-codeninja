@@ -13,7 +13,7 @@ public class Ninja extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     int dy=0;
-    int g =2;
+    int g =1;
      public Ninja(){
     }
     public Ninja(int x, int y){
@@ -51,15 +51,24 @@ public class Ninja extends Actor
         int x, y;
         x=this.getX();
         y=this.getY();
-       if(isBarrier()){
+       //if(isTouching(null)){
             if(Greenfoot.isKeyDown("left")){
-                move(-2);
+                move(-2);  
+               if (getOneIntersectingObject(TempWall.class) != null) move(2); 
             }
             if(Greenfoot.isKeyDown("right")){
-                move(2);
+               move(2);  
+               if (getOneIntersectingObject(TempWall.class) != null) move(-2);
             }
-            
-        }
+            if(Greenfoot.isKeyDown("up")){
+                //Add Conditionn for isTouchingGround.
+                //if(isTouching(null)){
+                    dy=-3;
+                    setLocation(getX(), getY()+dy);
+                //}
+            }
+        
+       /* }
         else{
              if(Greenfoot.isKeyDown("left")){
                 move(2);
@@ -73,10 +82,11 @@ public class Ninja extends Actor
             }
             //potential for momento design pattern
             
-        }
+        }*/
        if (Greenfoot.isKeyDown("up"))
             {
-               dy= - 6; 
+               if (getOneIntersectingObject(wall.class) != null) dy=0;
+                dy= - 6; 
             }
     }
         public boolean isBarrier(){
@@ -97,11 +107,7 @@ public class Ninja extends Actor
         setLocation(getX(), getY()+dy);
     }
     public void checkedFall(){
-        if(onGround()){
-            dy = 0;
-            setLocation(getX(), getY()-8);
-        }
-        else{
+              if(!isTouching(null)){
             fall();
         }
     }
