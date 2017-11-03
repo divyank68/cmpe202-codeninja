@@ -22,23 +22,24 @@ public class MyWorld extends World
      */
     public void prepare()
     {
-        Bricks b1 =  new Bricks();
-        Bricks b2 =  new Bricks();
-        Bricks b3 =  new Bricks();
-        Bricks b4 =  new Bricks();
-        Bricks b5 =  new Bricks();
-        Bricks b6 =  new Bricks();
-        Bricks b7 =  new Bricks();
-        Bricks b8 =  new Bricks();
-        Bricks b9 =  new Bricks();
-        Bricks b10 =  new Bricks();
-        Bricks b11 =  new Bricks();
-        ninja ninja1 =  new ninja();
-        BaseBrick bb1 =  new BaseBrick();
-        fireballs fb1 =  new fireballs();
-        Shuriken s1 =  new Shuriken();
-        barrier br1 =  new barrier();
-        barrier br2 =  new barrier();
+        Bricks b1 =  new  Bricks();
+        Bricks b2 =  new  Bricks();
+        Bricks b3 =  new  Bricks();
+        Bricks b4 =  new  Bricks();
+        Bricks b5 =  new  Bricks();
+        Bricks b6 =  new  Bricks();
+        Bricks b7 =  new  Bricks();
+        Bricks b8 =  new  Bricks();
+        Bricks b9 =  new  Bricks();
+        Bricks b10 =  new  Bricks();
+        Bricks b11 =  new  Bricks();
+        ninja ninja1 =  new  ninja();
+        BaseBrick bb1 =  new  BaseBrick();
+        fireballs fb1 =  new  fireballs();
+        Shuriken s1 =  new  Shuriken();
+        barrier br1 =  new  barrier();
+        barrier br2 =  new  barrier();
+        Bomb bomb1 =  new  Bomb();
         addObject(b1, 400, 280);
         addObject(b2, 200, 280);
         addObject(b3, 300, 190);
@@ -55,5 +56,6 @@ public class MyWorld extends World
         addObject(b11, 550, 280);
         addObject(br1, 550, 380);
         addObject(br2, 290, 380);
+        addObject(bomb1, 450, 80);
     }
 }
