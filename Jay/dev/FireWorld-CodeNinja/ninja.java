@@ -45,6 +45,7 @@ public class ninja extends Actor
         }
         getFireballs();
         getShriken();
+        killed();
     }
 
     /**
@@ -133,6 +134,17 @@ public class ninja extends Actor
         if (isTouching(Shuriken.class)) {
             removeTouching(Shuriken.class);
             shuriken = shuriken + 1;
+            
+        }
+    }
+
+    /**
+     * 
+     */
+    public void killed()
+    {
+        if (isTouching(barrier.class)) {
+            getWorld().removeObject(this);
             
         }
     }

@@ -37,6 +37,8 @@ public class MyWorld extends World
         BaseBrick bb1 =  new  BaseBrick();
         fireballs fb1 =  new  fireballs();
         Shuriken s1 =  new  Shuriken();
+        barrier br1 =  new  barrier();
+        barrier br2 =  new  barrier();
         addObject(b1, 400, 280);
         addObject(b2, 200, 280);
         addObject(b3, 300, 190);
@@ -51,5 +53,7 @@ public class MyWorld extends World
         addObject(fb1, 70, 61);
         addObject(s1, 550, 260);
         addObject(b11, 550, 280);
+        addObject(br1, 550, 380);
+        addObject(br2, 290, 380);
     }
 }
