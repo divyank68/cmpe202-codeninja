@@ -143,7 +143,7 @@ public class ninja extends Actor
      */
     public void killed()
     {
-        if (isTouching(barrier.class)) {
+        if (isTouching(barrier.class) || isTouching(Bomb.class)) {
             getWorld().removeObject(this);
             
         }

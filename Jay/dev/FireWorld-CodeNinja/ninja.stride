@@ -168,7 +168,7 @@
             <params/>
             <throws/>
             <body>
-                <if condition="isTouching(barrier.class)" condition-java="isTouching(barrier.class)" enable="true">
+                <if condition="isTouching(barrier.class)||isTouching(Bomb.class)" condition-java="isTouching(barrier.class) || isTouching(Bomb.class)" enable="true">
                     <ifStatements>
                         <call expression="getWorld().removeObject(this)" expression-java="getWorld().removeObject(this)" enable="true"/>
                         <blank/>
