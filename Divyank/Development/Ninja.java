@@ -38,6 +38,13 @@ public class Ninja extends Actor
             move(-5);
         }
         y=y+g;
-        
-    }    
+        checkKeys();
+    }
+    public void checkKeys()
+    {
+        if("space".equals(Greenfoot.getKey()))
+        {
+            getWorld().addObject(new Splash(),getX(),getY());
+        }
+    }
 }
