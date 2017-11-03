@@ -1,11 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-//import java.awt.Color;
-/**
- * Write a description of class HealthBar here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+
+
 public class HealthBar extends Person
 {
     int health=4;
@@ -25,7 +20,7 @@ public class HealthBar extends Person
         {
             setImage(new GreenfootImage(healthBarWidth + 2, healthBarHeight + 2));
             GreenfootImage myImage = getImage();
-            myImage.setColor(Color.WHITE);
+            myImage.setColor(Color.GREEN);
             myImage.drawRect(0, 0, healthBarWidth + 1, healthBarHeight + 1);
             myImage.setColor(Color.RED);
             myImage.fillRect(1, 1, health*pixelPerHealthPoint, healthBarHeight);
