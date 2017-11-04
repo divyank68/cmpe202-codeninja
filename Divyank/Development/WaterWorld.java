@@ -34,7 +34,7 @@ public class WaterWorld extends World
         addObject(f3, 230, 400);
         addObject(f4, 350, 350);
         addObject(f7, 500, 10);
-        addObject(f8, 600, 80);
+        //addObject(f8, 600, 80);
         addObject(f9, 450, 350);
         addObject(f10, 350, 350);
     }
