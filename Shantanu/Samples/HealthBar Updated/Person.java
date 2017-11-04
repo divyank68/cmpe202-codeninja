@@ -33,7 +33,7 @@ public class Person extends Background1
             shoot();
         }
         
-        if(Greenfoot.isKeyDown("up")==true)
+        if((Greenfoot.isKeyDown("up")==true) && (getY()>(getWorld().getHeight()-475)))
         {
             jump();
         }
