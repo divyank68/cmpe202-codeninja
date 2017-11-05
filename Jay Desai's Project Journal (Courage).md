@@ -48,3 +48,10 @@ Week-5:
    good work in this week, I had made sure that team is aware of the scrum methodologies, approaches in scrum, difference 
    between kanban and scrum etc. Also, in this week we had decided to get head start in terms of coding exercise so that 
    we can get enough time for extra activities. For that, I made a worksheet so that we can trace our work and complete it in time.   
+
+Week-6:
+
+* In total 6 weeks we have made a good progress in terms of codeing. But, I found one area where my team can improve and that 
+  is to refactore the code. So, in this week along with the regular coding I made my team to refactore the code and there by 
+  making the code more sustainable in longer run. Also, as we are approching the ending of the project we analyzed each others 
+  progress and communicated the feedback on area to improve. 
