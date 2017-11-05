@@ -14,3 +14,6 @@ Everyone on the team was able to work well together. The group was in harmony. C
 
 #Week 5
 This week we started scrum. It Scrum is part of the Agile movement. Agile is a response to the failure of the dominant software development project management paradigms (including waterfall) and borrows many principles from lean manufacturing. It was hard for the team to understand the concepts of the scrum board and thus it was a bit of a learning curve.
+
+#Week 6 
+This week we decided to finally integrate. So, we will need to meet more frequently in the weeks ahead. We might need to do pair programming in order to be more productive. Communication amongst the team members is very important and I will try to coordiante in the comming week. Working with the Scrum board is still a daunting task and I hope to be able to do it correctly.
