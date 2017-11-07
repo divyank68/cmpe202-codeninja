@@ -62,6 +62,7 @@
                 <call expression="getFireballs()" expression-java="getFireballs()" enable="true"/>
                 <call expression="getShriken()" expression-java="getShriken()" enable="true"/>
                 <call expression="killed()" expression-java="killed()" enable="true"/>
+                <call expression="checkobstacles()" expression-java="checkobstacles()" enable="true"/>
             </body>
         </method>
         <method access="private" type="void" type-java="void" name="fire" enable="true">
@@ -172,6 +173,19 @@
                     <ifStatements>
                         <call expression="getWorld().removeObject(this)" expression-java="getWorld().removeObject(this)" enable="true"/>
                         <blank/>
+                    </ifStatements>
+                </if>
+            </body>
+        </method>
+        <method access="public" type="void" type-java="void" name="checkobstacles" enable="true">
+            <javadoc xml:space="preserve"/>
+            <params/>
+            <throws/>
+            <body>
+                <variable type="Actor" type-java="Actor" name="bricks" value="getOneIntersectingObject(Bricks.class)" value-java="getOneIntersectingObject(Bricks.class)" enable="true"/>
+                <if condition="bricks!=null&amp;&amp;!onGround()" condition-java="bricks != null &amp;&amp; ! onGround()" enable="true">
+                    <ifStatements>
+                        <call expression="move(-5)" expression-java="move(-5)" enable="true"/>
                     </ifStatements>
                 </if>
             </body>

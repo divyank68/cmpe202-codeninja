@@ -46,6 +46,7 @@ public class ninja extends Actor
         getFireballs();
         getShriken();
         killed();
+        checkobstacles();
     }
 
     /**
@@ -53,7 +54,7 @@ public class ninja extends Actor
      */
     private void fire()
     {
-        fireballs suri1 =  new fireballs();
+        fireballs suri1 =  new  fireballs();
         getWorld().addObject(suri1, getX(), getY());
         suri1.setRotation(getRotation());
     }
@@ -146,6 +147,17 @@ public class ninja extends Actor
         if (isTouching(barrier.class) || isTouching(Bomb.class)) {
             getWorld().removeObject(this);
             
+        }
+    }
+
+    /**
+     * 
+     */
+    public void checkobstacles()
+    {
+        Actor bricks = getOneIntersectingObject(Bricks.class);
+        if (bricks != null &&  ! onGround()) {
+            move(-5);
         }
     }
 }
