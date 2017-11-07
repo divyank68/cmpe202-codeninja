@@ -53,7 +53,7 @@ public class ninja extends Actor
      */
     private void fire()
     {
-        fireballs suri1 =  new  fireballs();
+        fireballs suri1 =  new fireballs();
         getWorld().addObject(suri1, getX(), getY());
         suri1.setRotation(getRotation());
     }

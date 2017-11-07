@@ -13,5 +13,12 @@ public class Bomb extends Actor
      */
     public void act()
     {
+        move(1);
+        if (getX() + 10 > 560) {
+            turn(180);
+        }
+        if (getX() - 10 < 325) {
+            turn(180);
+        }
     }
 }
