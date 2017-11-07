@@ -37,6 +37,11 @@ public class Person extends Background1
         {
             jump();
         }
+        if(Greenfoot.isKeyDown("down"))
+        {
+           
+            fall();
+        }
         
     }
    public void checkFall()
@@ -53,7 +58,7 @@ public class Person extends Background1
     public void fall()
     {
         setLocation( getX(), getY() + vSpeed);
-        vSpeed= vSpeed + acceleration;
+        vSpeed= vSpeed + acceleration+2;
     }
     public void shoot()
     {
