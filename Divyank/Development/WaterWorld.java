@@ -6,9 +6,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
+
 public class WaterWorld extends World
 {
-
+    HealthBar hb = new HealthBar();
     /**
      * Constructor for objects of class WaterWorld.
      * 
@@ -37,5 +38,6 @@ public class WaterWorld extends World
         //addObject(f8, 600, 80);
         addObject(f2, 450, 350);
         addObject(f10, 350, 350);
+        addObject(hb, 50, 10);
     }
 }

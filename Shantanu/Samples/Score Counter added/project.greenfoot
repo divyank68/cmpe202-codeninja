@@ -21,6 +21,7 @@ dependency3.type=UsesDependency
 dependency4.from=MyWorld
 dependency4.to=HealthBar
 dependency4.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=717
 editor.fx.0.width=816
 editor.fx.0.x=307
@@ -29,6 +30,16 @@ mainWindow.height=735
 mainWindow.width=1370
 mainWindow.x=-7
 mainWindow.y=0
+=======
+editor.fx.0.height=739
+editor.fx.0.width=816
+editor.fx.0.x=275
+editor.fx.0.y=-4
+mainWindow.height=744
+mainWindow.width=1378
+mainWindow.x=-8
+mainWindow.y=-8
+>>>>>>> 69aa38395a28dcb4111d04f0874bebce66f8da5c
 package.numDependencies=4
 package.numTargets=6
 project.charset=UTF-8
