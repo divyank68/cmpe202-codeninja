@@ -22,5 +22,20 @@ public class TempWall extends Actor
     public void act() 
     {
         // Add your action code here.
+        Actor shuriken;
+        shuriken = getOneObjectAtOffset(0,0, Shuriken.class);
+        if(shuriken != null)
+        {
+            World w;
+            w = getWorld();
+            w.removeObject(shuriken);
+            /*Grapes g = new Grapes();
+            FruitFactory f = new FruitFactory();
+            Random rand = new Random();
+            int  nx = rand.nextInt(580) + 20;
+            int ny = rand.nextInt(380) + 20;*/
+            Shuriken s = new Shuriken();
+            w.addObject(s, 692,187);
+        }
     }    
 }

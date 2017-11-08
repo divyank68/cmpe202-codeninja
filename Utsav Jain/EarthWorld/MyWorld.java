@@ -31,7 +31,7 @@ public class MyWorld extends World
         Ninja n = new Ninja(50,100);
         MovingBrick mb1 = new MovingBrick(150,30);
         MovingBrick mb2 = new MovingBrick(150,30);
-        
+        Shuriken s = new Shuriken();
         addObject(borderDown, 400,600);
         addObject(borderUp, 400,0);
         addObject(w1, 50,400);
@@ -46,6 +46,7 @@ public class MyWorld extends World
         addObject(n, 50,533);
         addObject(mb1, 318,400);
         addObject(mb2, 650,400);
+        addObject(s, 692,187);
         prepare();
     }
 
