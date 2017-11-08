@@ -17,7 +17,7 @@ public class blob extends Actor
         move(10);
         life = life - 1;
         if (life == 0) {
-            getWorld().addObject( new splat(), getX(), getY());
+            getWorld().addObject( new  splat(), getX(), getY());
             getWorld().removeObject(this);
         }
     }

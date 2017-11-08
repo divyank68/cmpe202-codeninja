@@ -63,5 +63,6 @@ public class Person extends Background1
     public void shoot()
     {
         getWorld().addObject(new Bullet(), getX(), getY());
+        new Bullet().setRotation(getRotation());
     }
 }

@@ -23,7 +23,7 @@ public class MyWorld extends World
      */
     private void prepare()
     {
-        canon canon =  new canon();
+        canon canon =  new  canon();
         addObject(canon, 456, 248);
     }
 }

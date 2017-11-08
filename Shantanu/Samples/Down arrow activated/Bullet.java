@@ -14,6 +14,13 @@ public class Bullet extends Person
      */
     public void act() 
     {
+        if(Greenfoot.isKeyDown("z")){
+        setRotation(getRotation() -5);
+    }
+    if(Greenfoot.isKeyDown("x")){
+        setRotation(getRotation() +5);
+    }
+        
        move(5);
     }    
 }
