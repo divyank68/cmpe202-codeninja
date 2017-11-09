@@ -12,6 +12,8 @@ public class Ninja extends Actor
     int y=0;
     int g=1;
     int shots=10;
+    
+    
     /**
      * Act - do whatever the Ninja wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -56,6 +58,7 @@ public class Ninja extends Actor
         if(obs!=null)
         {
             move(-30);
+            HealthBar.looseHealth();
         }
     }   
 }
