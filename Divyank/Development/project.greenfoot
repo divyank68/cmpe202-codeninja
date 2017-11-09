@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Thu Nov 09 12:29:50 PST 2017
+#Thu Nov 09 13:22:06 PST 2017
 dependency9.type=UsesDependency
 target4.type=ClassTarget
 <<<<<<<=HEAD
@@ -19,7 +19,7 @@ target8.width=90
 target4.typeParameters=
 class.WaterWorld.image=WaterWorld.jpg
 readme.width=47
-editor.fx.0.width=816
+editor.fx.0.width=0
 target1.height=50
 target5.type=ClassTarget
 target3.typeParameters=
@@ -42,9 +42,9 @@ dependency5.from=Splash
 dependency2.to=Fish
 target1.width=80
 dependency5.type=UsesDependency
-editor.fx.0.y=8
+editor.fx.0.y=0
 target2.typeParameters=
-editor.fx.0.x=208
+editor.fx.0.x=0
 target8.height=50
 dependency3.to=HealthBar
 target3.showInterface=false
@@ -94,14 +94,14 @@ dependency7.type=UsesDependency
 target2.type=ClassTarget
 target2.y=0
 target2.x=0
-mainWindow.y=86
-mainWindow.x=315
+mainWindow.y=84
+mainWindow.x=298
 target8.name=WaterWorld
 target6.typeParameters=
 dependency1.from=Ninja
 target5.width=80
 target1.y=0
-editor.fx.0.height=715
+editor.fx.0.height=0
 target1.x=0
 dependency1.type=UsesDependency
 readme.height=58

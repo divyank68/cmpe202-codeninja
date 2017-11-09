@@ -46,7 +46,7 @@ public class Ninja extends Actor
     }
     public void checkKeys()
     {
-        if("space".equals(Greenfoot.getKey()) && shots>0)
+        if("space".equals(Greenfoot.getKey()))
         {
             getWorld().addObject(new Splash(),getX(),getY());
             shots--;
@@ -58,7 +58,10 @@ public class Ninja extends Actor
         if(obs!=null)
         {
             move(-30);
-            HealthBar.looseHealth();
+            World myWorld = getWorld();
+            WaterWorld mw = (WaterWorld)myWorld;
+            HealthBar hb=mw.getHealthBar();
+            hb.looseHealth();
         }
     }   
 }
