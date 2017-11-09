@@ -5,6 +5,7 @@ public class MyWorld extends World
 {
     GreenfootSound myMusic= new GreenfootSound("Skip_-_01_-_HyperSpaceAdventure.mp3");
     private Background1[] bg = new Background1[3];
+    
     HealthBar hb = new HealthBar();
     
     private final int LEFT_BOUNDARY = -300;
@@ -33,7 +34,7 @@ public class MyWorld extends World
         return hb;
         
     }
-    
+   
     public void scroll(int direction)
     {
         for(int i=0; i< bg.length; i++)
@@ -52,6 +53,10 @@ public class MyWorld extends World
         {
             scroll(-5);
         }
+    }
+    public void prepare()
+    {
+        addObject(hb, 200, 40);
     }
 
 }

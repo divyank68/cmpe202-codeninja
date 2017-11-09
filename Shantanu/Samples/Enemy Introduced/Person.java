@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Person extends Background1
 {
-    
+    boolean touch = false;
      private int vSpeed=0;
      private int acceleration= 1;
      private int jumpStrength= 7;
@@ -64,5 +64,21 @@ public class Person extends Background1
     {
         getWorld().addObject(new Bullet(), getX(), getY());
         new Bullet().setRotation(getRotation());
+    }
+     public void hitEnemy()
+    {
+        Actor en= getOneIntersectingObject(Enemy.class);
+        if(en!=null)
+        {
+            World myWorld = getWorld();
+            MyWorld mw = (MyWorld)myWorld;
+            HealthBar hb=mw.getHealthBar();
+            if(touch == false)
+            {
+                hb.looseHealth();
+                touch =true;
+            }
+            //myWorld.removeObject(ths);
+        }
     }
 }
