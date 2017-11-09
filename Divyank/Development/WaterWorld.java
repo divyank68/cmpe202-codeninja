@@ -10,6 +10,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class WaterWorld extends World
 {
     HealthBar hb = new HealthBar();
+    private BgScroll[] bg = new BgScroll[3];
+    private final int LEFT_BOUNDARY = -300;
+    private final int RIGHT_BOUNDARY = 600;
     /**
      * Constructor for objects of class WaterWorld.
      * 
@@ -18,6 +21,7 @@ public class WaterWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        
         Ninja n = new Ninja();
         Fish f1 = new Fish();
         Fish f2 = new Fish();
@@ -40,4 +44,24 @@ public class WaterWorld extends World
         addObject(f10, 350, 350);
         addObject(hb, 50, 10);
     }
+     public void scroll(int direction)
+    {
+        for(int i=0; i< bg.length; i++)
+        {
+            bg[i].setLocation(bg[i].getX()+direction, bg[i].getY() );
+        }
+    }
+    public void act()
+    {
+        //myMusic.play();
+        //if(Greenfoot.isKeyDown("left")) 
+        //{
+          //  scroll(5);
+        //}
+        //if(Greenfoot.isKeyDown("right"))
+        //{
+          //  scroll(-5);
+        //}
+    }
+
 }

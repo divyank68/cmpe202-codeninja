@@ -12,6 +12,8 @@ public class ninja extends Actor
     private int vspeed = 0;
     private int fireballs = 0;
     private int shuriken = 0;
+    private boolean shuflag = false;
+    private boolean fireflag = false;
 
     /**
      * Act - do whatever the ninja wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -54,9 +56,22 @@ public class ninja extends Actor
      */
     private void fire()
     {
+<<<<<<< HEAD
         fireballs suri1 =  new fireballs();
         getWorld().addObject(suri1, getX(), getY());
         suri1.setRotation(getRotation());
+=======
+        if (fireflag &&  ! shuflag) {
+            fireballs suri1 =  new  fireballs();
+            getWorld().addObject(suri1, getX(), getY());
+            suri1.setRotation(getRotation());
+        }
+        if (shuflag &&  ! fireflag) {
+            Shuriken suri1 =  new  Shuriken();
+            getWorld().addObject(suri1, getX(), getY());
+            suri1.setRotation(getRotation());
+        }
+>>>>>>> 3f7ee66e945ec8fdb4a930ee8d64e443d0eced02
     }
 
     /**
@@ -120,6 +135,7 @@ public class ninja extends Actor
             if (fireballs == 3) {
                 removeTouching(fireballs.class);
                 fireballs = fireballs + 1;
+                fireflag = true;
             }
             else {
                 fireballs = fireballs + 1;
@@ -135,6 +151,7 @@ public class ninja extends Actor
         if (isTouching(Shuriken.class)) {
             removeTouching(Shuriken.class);
             shuriken = shuriken + 1;
+            shuflag = true;
             
         }
     }
