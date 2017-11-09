@@ -12,6 +12,8 @@
         <variable access="private" type="int" type-java="int" name="vspeed" value="0" value-java="0" enable="true"/>
         <variable access="private" type="int" type-java="int" name="fireballs" value="0" value-java="0" enable="true"/>
         <variable access="private" type="int" type-java="int" name="shuriken" value="0" value-java="0" enable="true"/>
+        <variable access="private" type="boolean" type-java="boolean" name="shuflag" value="false" value-java="false" enable="true"/>
+        <variable access="private" type="boolean" type-java="boolean" name="fireflag" value="false" value-java="false" enable="true"/>
     </fields>
     <constructors/>
     <methods>
@@ -73,9 +75,23 @@
                 <variable type="blob" type-java="blob" name="blob1" value="new blob()" value-java=" new blob()" enable="false"/>
                 <call expression="getWorld().addObject(blob1,getX(),getY())" expression-java="getWorld().addObject(blob1, getX(), getY())" enable="false"/>
                 <call expression="blob1.setRotation(getRotation())" expression-java="blob1.setRotation(getRotation())" enable="false"/>
-                <variable type="fireballs" type-java="fireballs" name="suri1" value="new fireballs()" value-java=" new fireballs()" enable="true"/>
-                <call expression="getWorld().addObject(suri1,getX(),getY())" expression-java="getWorld().addObject(suri1, getX(), getY())" enable="true"/>
-                <call expression="suri1.setRotation(getRotation())" expression-java="suri1.setRotation(getRotation())" enable="true"/>
+                <variable type="fireballs" type-java="fireballs" name="suri1" value="new fireballs()" value-java=" new fireballs()" enable="false"/>
+                <call expression="getWorld().addObject(suri1,getX(),getY())" expression-java="getWorld().addObject(suri1, getX(), getY())" enable="false"/>
+                <call expression="suri1.setRotation(getRotation())" expression-java="suri1.setRotation(getRotation())" enable="false"/>
+                <if condition="fireflag&amp;&amp;!shuflag" condition-java="fireflag &amp;&amp; ! shuflag" enable="true">
+                    <ifStatements>
+                        <variable type="fireballs" type-java="fireballs" name="suri1" value="new fireballs()" value-java=" new fireballs()" enable="true"/>
+                        <call expression="getWorld().addObject(suri1,getX(),getY())" expression-java="getWorld().addObject(suri1, getX(), getY())" enable="true"/>
+                        <call expression="suri1.setRotation(getRotation())" expression-java="suri1.setRotation(getRotation())" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="shuflag&amp;&amp;!fireflag" condition-java="shuflag &amp;&amp; ! fireflag" enable="true">
+                    <ifStatements>
+                        <variable type="Shuriken" type-java="Shuriken" name="suri1" value="new Shuriken()" value-java=" new Shuriken()" enable="true"/>
+                        <call expression="getWorld().addObject(suri1,getX(),getY())" expression-java="getWorld().addObject(suri1, getX(), getY())" enable="true"/>
+                        <call expression="suri1.setRotation(getRotation())" expression-java="suri1.setRotation(getRotation())" enable="true"/>
+                    </ifStatements>
+                </if>
             </body>
         </method>
         <method access="public" type="void" type-java="void" name="moveRight" enable="true">
@@ -141,6 +157,7 @@
                             <ifStatements>
                                 <call expression="removeTouching(fireballs.class)" expression-java="removeTouching(fireballs.class)" enable="true"/>
                                 <assign dest="fireballs" dest-java="fireballs" src="fireballs+1" src-java="fireballs + 1" enable="true"/>
+                                <assign dest="fireflag" dest-java="fireflag" src="true" src-java="true" enable="true"/>
                             </ifStatements>
                             <else>
                                 <assign dest="fireballs" dest-java="fireballs" src="fireballs+1" src-java="fireballs + 1" enable="true"/>
@@ -159,6 +176,7 @@
                     <ifStatements>
                         <call expression="removeTouching(Shuriken.class)" expression-java="removeTouching(Shuriken.class)" enable="true"/>
                         <assign dest="shuriken" dest-java="shuriken" src="shuriken+1" src-java="shuriken + 1" enable="true"/>
+                        <assign dest="shuflag" dest-java="shuflag" src="true" src-java="true" enable="true"/>
                         <blank/>
                     </ifStatements>
                 </if>
