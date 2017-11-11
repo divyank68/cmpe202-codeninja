@@ -46,7 +46,7 @@ public class Ninja extends Actor
     }
     public void checkKeys()
     {
-        if("space".equals(Greenfoot.getKey()))
+        if("space".equals(Greenfoot.getKey()) && shots>0)
         {
             getWorld().addObject(new Splash(),getX(),getY());
             shots--;
