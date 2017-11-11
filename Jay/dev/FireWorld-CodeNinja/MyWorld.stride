@@ -46,6 +46,7 @@
                 <variable type="barrier" type-java="barrier" name="br2" value="new barrier()" value-java=" new barrier()" enable="true"/>
                 <variable type="Bomb" type-java="Bomb" name="bomb1" value="new Bomb()" value-java=" new Bomb()" enable="true"/>
                 <variable type="barrel" type-java="barrel" name="barrel1" value="new barrel()" value-java=" new barrel()" enable="true"/>
+                <variable type="end" type-java="end" name="end" value="new end()" value-java=" new end()" enable="true"/>
                 <call expression="addObject(b1,430,280)" expression-java="addObject(b1, 430, 280)" enable="true"/>
                 <call expression="addObject(b2,150,280)" expression-java="addObject(b2, 150, 280)" enable="true"/>
                 <call expression="addObject(b3,300,190)" expression-java="addObject(b3, 300, 190)" enable="true"/>
@@ -67,6 +68,7 @@
                 <call expression="addObject(br2,290,380)" expression-java="addObject(br2, 290, 380)" enable="true"/>
                 <call expression="addObject(bomb1,450,80)" expression-java="addObject(bomb1, 450, 80)" enable="true"/>
                 <call expression="addObject(barrel1,130,75)" expression-java="addObject(barrel1, 130, 75)" enable="true"/>
+                <call expression="addObject(end,565,69)" expression-java="addObject(end, 565, 69)" enable="true"/>
             </body>
         </method>
     </methods>
