@@ -58,7 +58,10 @@ public class Ninja extends Actor
         if(obs!=null)
         {
             move(-30);
-            HealthBar.looseHealth();
+            World myWorld = getWorld();
+            WaterWorld mw = (WaterWorld)myWorld;
+            HealthBar hb=mw.getHealthBar();
+            hb.looseHealth();
         }
     }   
 }

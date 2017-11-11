@@ -33,6 +33,9 @@ public class MyWorld extends World
         Bricks b9 =  new  Bricks();
         Bricks b10 =  new  Bricks();
         Bricks b11 =  new  Bricks();
+        Bricks b12 =  new  Bricks();
+        Bricks b13 =  new  Bricks();
+        Bricks b14 =  new  Bricks();
         ninja ninja1 =  new  ninja();
         BaseBrick bb1 =  new  BaseBrick();
         fireballs fb1 =  new  fireballs();
@@ -40,9 +43,13 @@ public class MyWorld extends World
         barrier br1 =  new  barrier();
         barrier br2 =  new  barrier();
         Bomb bomb1 =  new  Bomb();
-        addObject(b1, 400, 280);
-        addObject(b2, 200, 280);
+        barrel barrel1 =  new  barrel();
+        end end =  new  end();
+        addObject(b1, 430, 280);
+        addObject(b2, 150, 280);
         addObject(b3, 300, 190);
+        addObject(b12, 365, 190);
+        addObject(b14, 565, 100);
         addObject(b4, 500, 100);
         addObject(b5, 435, 100);
         addObject(b6, 370, 100);
@@ -54,8 +61,11 @@ public class MyWorld extends World
         addObject(fb1, 70, 61);
         addObject(s1, 550, 260);
         addObject(b11, 550, 280);
+        addObject(b13, 235, 190);
         addObject(br1, 550, 380);
         addObject(br2, 290, 380);
         addObject(bomb1, 450, 80);
+        addObject(barrel1, 130, 75);
+        addObject(end, 565, 69);
     }
 }

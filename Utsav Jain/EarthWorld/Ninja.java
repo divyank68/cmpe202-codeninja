@@ -33,17 +33,41 @@ public class Ninja extends Actor
     public void moveDown(){
          setLocation(getX(), getY() + 3);
     }
-    public boolean intersectingLeft(){
-        return true;
+    public boolean isIntersectingLeft(){
+        boolean b=false;
+        move(-1);
+        if(getOneIntersectingObject(null)!=null){
+            b= true;
+        }
+       move(1);
+       return b;
     }
-    public boolean intersectingRight(){
-        return true;
+    public boolean isIntersectingRight(){
+        boolean b=false;
+        move(1);
+        if(getOneIntersectingObject(null)!=null){
+            b= true;
+        }
+       move(-1);
+       return b;
     }
-    public boolean intersectingUp(){
-        return true;
+    public boolean isIntersectingUp(){
+       boolean b=false;
+        setLocation(getX(), getY()-1);
+        if(getOneIntersectingObject(null)!=null){
+            b= true;
+        }
+       setLocation(getX(), getY()+1);
+       return b;
     }
-    public boolean intersectingDown(){
-        return true;
+    public boolean isIntersectingDown(){
+       boolean b=false;
+       setLocation(getX(), getY()+1);
+        if(getOneIntersectingObject(null)!=null){
+            b= true;
+        }
+        setLocation(getX(), getY()-1);
+       return b;
     }
     
     
@@ -63,8 +87,10 @@ public class Ninja extends Actor
             if(Greenfoot.isKeyDown("up")){
                 //Add Conditionn for isTouchingGround.
                // if(!isTouching(null)){
-                    dy=3;
+                  // if(!isIntersectingUp()){
+                   dy=3;
                     setLocation(getX(), getY()-dy);
+                //}
                     //if(!isTouching(null)){
                     //        setLocation(getX(), getY()+dy);
                   //  }

@@ -3,10 +3,10 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class HealthBar extends Ninja
 {
-    static int health=4;
-    int healthBarWidth=50;
-    int healthBarHeight=10;
-    int pixelPerHealthPoint= (int)healthBarWidth/health;
+    int health=9;
+    int healthBarWidth=60;
+    int healthBarHeight=15;
+   int pixelPerHealthPoint= (int)healthBarWidth/health;
     
    public HealthBar()
    {
@@ -20,14 +20,18 @@ public class HealthBar extends Ninja
         {
             setImage(new GreenfootImage(healthBarWidth, healthBarHeight));
             GreenfootImage myImage = getImage();
-            myImage.setColor(Color.GREEN);
             myImage.drawRect(0, 0, healthBarWidth, healthBarHeight);
             myImage.setColor(Color.RED);
             myImage.fillRect(1, 1, health*pixelPerHealthPoint, healthBarHeight);
             
         }
-        public static void looseHealth()
+        public void looseHealth()
         {
-            health--;
+            
+            if(health>1)
+            {
+                health=health-2;
+            }
+            
         }
 }

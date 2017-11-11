@@ -13,6 +13,7 @@ public class WaterWorld extends World
     private BgScroll[] bg = new BgScroll[3];
     private final int LEFT_BOUNDARY = -300;
     private final int RIGHT_BOUNDARY = 600;
+    GreenfootSound myMusic= new GreenfootSound("Underwater Theme.mp3");
     /**
      * Constructor for objects of class WaterWorld.
      * 
@@ -42,7 +43,7 @@ public class WaterWorld extends World
         //addObject(f8, 600, 80);
         addObject(f2, 450, 350);
         addObject(f10, 350, 350);
-        addObject(hb, 50, 10);
+        addObject(hb, 60, 15);
     }
      public void scroll(int direction)
     {
@@ -62,6 +63,11 @@ public class WaterWorld extends World
         //{
           //  scroll(-5);
         //}
+        myMusic.play();
+    }
+    public HealthBar getHealthBar()
+    {
+        return hb;
     }
 
 }
