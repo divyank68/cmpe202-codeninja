@@ -56,22 +56,16 @@ public class ninja extends Actor
      */
     private void fire()
     {
-<<<<<<< HEAD
-        fireballs suri1 =  new fireballs();
-        getWorld().addObject(suri1, getX(), getY());
-        suri1.setRotation(getRotation());
-=======
-        if (fireflag &&  ! shuflag) {
-            fireballs suri1 =  new  fireballs();
+        if (fireflag && ! shuflag) {
+            fireballs suri1 =  new fireballs();
             getWorld().addObject(suri1, getX(), getY());
             suri1.setRotation(getRotation());
         }
-        if (shuflag &&  ! fireflag) {
-            Shuriken suri1 =  new  Shuriken();
+        if (shuflag && ! fireflag) {
+            Shuriken suri1 =  new Shuriken();
             getWorld().addObject(suri1, getX(), getY());
             suri1.setRotation(getRotation());
         }
->>>>>>> 3f7ee66e945ec8fdb4a930ee8d64e443d0eced02
     }
 
     /**
