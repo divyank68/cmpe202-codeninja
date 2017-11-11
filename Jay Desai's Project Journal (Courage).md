@@ -55,3 +55,11 @@ Week-6:
   is to refactore the code. So, in this week along with the regular coding I made my team to refactore the code and there by 
   making the code more sustainable in longer run. Also, as we are approching the ending of the project we analyzed each others 
   progress and communicated the feedback on area to improve. 
+
+Week-7:
+
+* Before week 7, we were working on the individual funcationality. But as we are approching the end of the project, we needed to 
+  merge our code and change our functionality according to the other member's code/ functionality. So, I gave courage to the other 
+  team members to implement these changes and make our game more integrated. Also, we have decided to make one last integrated stage
+  on which every one can work. We devided the work that has to be done by individuals. Also, I made a priority list for the last
+  stage so that no work will remain pending.    
