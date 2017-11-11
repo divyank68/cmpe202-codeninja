@@ -39,7 +39,7 @@ public class MyWorld extends World
         addObject(tw2, 400, 60);
         addObject(w5, 400, 645);
         addObject(w2, 150, 250);
-        addObject(w3, 600, 250);
+        addObject(w3, 700, 315);
         addObject(w4, 500,120);
         addObject(j, 912,664);
         addObject(b, 662, 627);
