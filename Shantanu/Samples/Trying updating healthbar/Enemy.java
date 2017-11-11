@@ -15,6 +15,9 @@ public class Enemy extends Actor
      */
     public void act() 
     {
+        int angle= 10+ Greenfoot.getRandomNumber(10);
+        angle+= getRotation();
+        int step=5;
         movearound();
         turn(Greenfoot.getRandomNumber(90));
     } 
