@@ -19,3 +19,4 @@ This week we started scrum. It Scrum is part of the Agile movement. Agile is a r
 This week we decided to finally integrate. So, we will need to meet more frequently in the weeks ahead. We might need to do pair programming in order to be more productive. Communication amongst the team members is very important and I will try to coordiante in the comming week. Working with the Scrum board is still a daunting task and I hope to be able to do it correctly.
 
 #WEEK 7
+This was the penultimate week and thus the heat was on high. We worked together and pooled our work together and have now created an integrated product. Since scurm facilitates methods for effective communication, there was less difficulty in figuring out a way to talk. The next week will be our last. All loose will need to be found and dealt with. We will need to finish our diagrams and personal requirements.
