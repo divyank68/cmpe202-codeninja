@@ -1,4 +1,4 @@
-#Week 7 MoM
+#Week 7 Minutes Of Meetings
 
 What did the team do the past week?
 We started creating our boss fight scenario. The boss or master or monster will be an oscilitating character throwing wepons at out character and the character will have to dodge the attacks and at the same time will have to return fire at the antagonist. We implemented the builder pattern for the boss to shoot weapons at the player.
