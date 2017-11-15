@@ -1,11 +1,10 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import java.util.*;
 import greenfoot.*;
 
 /**
  * 
  */
-public class fireballs extends Actor
+public class fireballs extends Actor implements Strategy
 {
     private int life = Greenfoot.getRandomNumber(10) + 20;
 
@@ -20,5 +19,11 @@ public class fireballs extends Actor
             move(10);
             life = life - 1;
         }
+    }
+    
+     public Strategy getPowerobject()
+    {
+         return new fireballs();
+        
     }
 }
