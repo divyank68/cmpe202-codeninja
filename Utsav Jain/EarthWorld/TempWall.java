@@ -23,7 +23,7 @@ public class TempWall extends Actor
     {
         // Add your action code here.
         Actor shuriken;
-        shuriken = getOneObjectAtOffset(0,0, Shuriken.class);
+        shuriken = getOneObjectAtOffset(5,5, Shuriken.class);
         if(shuriken != null)
         {
             World w;
