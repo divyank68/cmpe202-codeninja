@@ -27,6 +27,7 @@ public class MyWorld extends World
         }
         addObject( new Person(), getWidth()/2, 190);
         addObject(hb, 200, 40);
+        prepare();
     }
     
     public HealthBar getHealthBar()
@@ -54,9 +55,19 @@ public class MyWorld extends World
             scroll(-5);
         }
     }
+    
     public void prepare()
     {
         addObject(hb, 200, 40);
+        Enemy[] bee = new Enemy[7];
+        for(int i=0; i<bee.length; i++)
+        {
+            bee[i] = new Enemy();
+            int beeX = Greenfoot.getRandomNumber(getWidth());
+            int beeY = Greenfoot.getRandomNumber(getHeight());
+            addObject(bee[i], beeX, beeY);
+        }
+    
     }
 
 }
