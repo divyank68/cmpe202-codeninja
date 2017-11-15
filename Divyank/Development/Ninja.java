@@ -11,7 +11,7 @@ public class Ninja extends Actor
 {
     int y=0;
     int g=1;
-    int shots=10;
+    int shots=5;
     
     
     /**
@@ -43,10 +43,11 @@ public class Ninja extends Actor
         y=y+g;
         checkKeys();
         checkObstacle();
+        gameover();
     }
     public void checkKeys()
     {
-        if("space".equals(Greenfoot.getKey()) && shots>0)
+        if(shots>0 && "space".equals(Greenfoot.getKey()))
         {
             getWorld().addObject(new Splash(),getX(),getY());
             shots--;
@@ -80,5 +81,17 @@ public class Ninja extends Actor
             hb.looseHealth();
         }
     }
-    }   
+    } 
+    public void gameover()
+    {
+        
+        if(isTouching(Starfish.class))
+        {
+            World world=getWorld();
+            world.removeObjects(world.getObjects(null));
+            world.setBackground("GameOver.jpeg");
+            //getMusic().stop;
+        }
+    
+    }
 }
