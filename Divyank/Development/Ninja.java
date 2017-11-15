@@ -51,9 +51,25 @@ public class Ninja extends Actor
             getWorld().addObject(new Splash(),getX(),getY());
             shots--;
         }
+        if(shots==0)
+        {
+            World world=getWorld();
+            Greenfoot.stop();
+            if(world!=null)
+            {
+                world.removeObjects(world.getObjects(null));
+                world.setBackground("GameOver.jpeg");
+            
+            
+            }
+            
+            
+        }
     }
     public void checkObstacle()
     {
+        if(shots>0)
+        {
         Actor obs=getOneIntersectingObject(Fish.class);
         if(obs!=null)
         {
@@ -63,5 +79,6 @@ public class Ninja extends Actor
             HealthBar hb=mw.getHealthBar();
             hb.looseHealth();
         }
+    }
     }   
 }
