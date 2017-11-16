@@ -1,7 +1,7 @@
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=e97f411210191d36ea8cb26ef889ea59c957729b
+>>>>>>>=4eef85b41a6fd0f4cc7c2204aa9c48fcbe28a6aa
 class.BgScroll.image=WaterWorld.jpg
 class.BgScroll.superclass=greenfoot.Actor
 class.Fish.image=fish3.png
@@ -53,25 +53,15 @@ dependency8.type=UsesDependency
 dependency9.from=WaterWorld
 dependency9.to=Fish
 dependency9.type=UsesDependency
-editor.fx.0.height=739
-editor.fx.0.width=816
-<<<<<<< HEAD
-editor.fx.0.x=275
-editor.fx.0.y=-4
-mainWindow.height=744
-mainWindow.width=1378
-mainWindow.x=-8
-mainWindow.y=0
-package.numDependencies=11
-=======
-editor.fx.0.x=313
-editor.fx.0.y=9
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 mainWindow.height=581
 mainWindow.width=892
 mainWindow.x=298
 mainWindow.y=84
 package.numDependencies=12
->>>>>>> 4eef85b41a6fd0f4cc7c2204aa9c48fcbe28a6aa
 package.numTargets=8
 project.charset=UTF-8
 readme.height=58
