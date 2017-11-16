@@ -26,7 +26,7 @@ public class MyWorld extends World
             x=x+ 600;
         }
         addObject( new Person(), getWidth()/2, 190);
-        addObject(hb, 200, 40);
+        addObject(hb, 300, 40);
         prepare();
     }
     
@@ -55,11 +55,12 @@ public class MyWorld extends World
             scroll(-5);
         }
     }
-    
+    
+
     public void prepare()
     {
-        addObject(hb, 200, 40);
-        Enemy[] bee = new Enemy[7];
+        addObject(hb, 300, 40);
+        Enemy[] bee = new Enemy[5];
         for(int i=0; i<bee.length; i++)
         {
             bee[i] = new Enemy();

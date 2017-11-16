@@ -22,5 +22,16 @@ public class Bullet extends Person
     }
         
        move(5);
-    }    
+       damage();
+    } 
+     public void damage()
+    {
+        if(isTouching(Enemy.class) )
+        {
+            removeTouching(Enemy.class);
+           
+            getWorld().removeObject(this);
+        }
+        
+    }  
 }
