@@ -27,12 +27,13 @@ public class Splash extends Actor
     }    
     public void damage()
     {
-        if(isTouching(Fish.class) ||isTouching(Starfish.class))
+        if(isTouching(Fish.class))
         {
             removeTouching(Fish.class);
-            removeTouching(Starfish.class);
-            getWorld().removeObject(this);
+            //removeTouching(Starfish.class);
+            //getWorld().removeObject(this);
         }
+        
         
     }   
 }

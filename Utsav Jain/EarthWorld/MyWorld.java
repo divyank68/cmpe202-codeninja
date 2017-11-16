@@ -17,12 +17,12 @@ public class MyWorld extends World
     {    
         // Create a new world with 800x600 cells with a cell size of 1x1 pixels.
         super(1000, 750, 1); 
-        wall w1 = new wall(100,30);
+        wall w1 = new wall(200,30);
         wall w2 = new wall(300, 30);
-        wall w3 = new wall(400,30);
+        wall w3 = new wall(500,30);
         wall w4 = new wall(600,30);
-        TempWall w5 = new TempWall(30,150);//390,600
-        TempWall tw1 = new TempWall(30,110);
+        TempWall w5 = new TempWall(30,200);//390,600
+        TempWall tw1 = new TempWall(30,200);
         TempWall tw2 = new TempWall(30,110);
         borderWall borderDown = new borderWall(1000,30);
         borderWall borderUp = new borderWall(1000,30);
@@ -34,12 +34,12 @@ public class MyWorld extends World
         Shuriken s = new Shuriken();
         addObject(borderDown, 509,734);
         addObject(borderUp, 400,0);
-        addObject(w1, 50,484);
-        addObject(tw1,215,190);
+        addObject(w1, 94,479);
+        addObject(tw1,218,218);
         addObject(tw2, 400, 60);
         addObject(w5, 400, 645);
-        addObject(w2, 150, 250);
-        addObject(w3, 700, 315);
+        addObject(w2, 150, 312);
+        addObject(w3, 800, 315);
         addObject(w4, 500,120);
         addObject(j, 912,664);
         addObject(b, 662, 627);
