@@ -3,9 +3,15 @@
 dependency9.type=UsesDependency
 target4.type=ClassTarget
 <<<<<<<=HEAD
+<<<<<<< HEAD
 target8.showInterface=false
 dependency3.from=Ninja
 target3.height=50
+=======
+>>>>>>>=4eef85b41a6fd0f4cc7c2204aa9c48fcbe28a6aa
+class.BgScroll.image=WaterWorld.jpg
+class.BgScroll.superclass=greenfoot.Actor
+>>>>>>> b36dadc56568e7d9783589817198630de33e476f
 class.Fish.image=fish3.png
 target5.height=50
 readme.y=10
@@ -65,8 +71,27 @@ target6.width=80
 target6.height=50
 class.HealthBar.superclass=Ninja
 dependency7.to=Starfish
+<<<<<<< HEAD
 class.Ninja.superclass=greenfoot.Actor
 dependency6.from=Splash
+=======
+dependency7.type=UsesDependency
+dependency8.from=WaterWorld
+dependency8.to=Ninja
+dependency8.type=UsesDependency
+dependency9.from=WaterWorld
+dependency9.to=Fish
+dependency9.type=UsesDependency
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+mainWindow.height=581
+mainWindow.width=892
+mainWindow.x=298
+mainWindow.y=84
+package.numDependencies=12
+>>>>>>> b36dadc56568e7d9783589817198630de33e476f
 package.numTargets=8
 target8.y=0
 target8.x=0

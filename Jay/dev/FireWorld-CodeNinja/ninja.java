@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import java.util.*;
 import greenfoot.*;
 
@@ -48,7 +47,7 @@ public class ninja extends Actor
         getFireballs();
         getShriken();
         checkobstacles();
-        if (isTouching(barrier.class) || isTouching(Bomb.class)) {
+        if (isTouching(barrier.class) || isTouching(Bomb.class)||isTouching(barrel.class)) {
             getWorld().removeObject(this);
             return;
             
