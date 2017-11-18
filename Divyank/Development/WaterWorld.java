@@ -43,7 +43,9 @@ public class WaterWorld extends World
         //addObject(f8, 600, 80);
         addObject(f2, 450, 350);
         addObject(f10, 350, 350);
-        addObject(hb, 60, 15);
+        //addObject(hb, 60, 15);
+        Mermaid m=new Mermaid();
+        addObject(m,500,25);
     }
      public void scroll(int direction)
     {
