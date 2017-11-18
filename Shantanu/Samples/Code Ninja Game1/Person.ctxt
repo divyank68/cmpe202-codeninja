@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Person
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Person\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=MyWorld
+comment1.target=void\ addedToWorld(greenfoot.World)
+comment2.params=
+comment2.target=void\ move()
+comment3.params=
+comment3.target=void\ Hancur()
+comment4.params=
+comment4.target=void\ act()
+numComments=5
