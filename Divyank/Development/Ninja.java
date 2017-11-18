@@ -83,6 +83,14 @@ public class Ninja extends Actor
             world.setBackground("GameOver.jpeg");
             //getMusic().stop;
         }
+        if(isTouching(Mermaid.class))
+        {
+            //World world=getWorld();
+            //world.removeObjects(world.getObjects(null));
+            //world.setBackground("GameOver.jpeg");
+            //SET NEXT WORLD HERE
+            //getMusic().stop;
+        }
     
     }
 }
