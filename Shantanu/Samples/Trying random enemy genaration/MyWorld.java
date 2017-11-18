@@ -3,6 +3,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class MyWorld extends World
 {
+    private int jeda=0;
     GreenfootSound myMusic= new GreenfootSound("Skip_-_01_-_HyperSpaceAdventure.mp3");
     private Background1[] bg = new Background1[3];
     
@@ -27,7 +28,7 @@ public class MyWorld extends World
         }
         addObject( new Person(), getWidth()/2, 190);
         addObject(hb, 300, 40);
-        prepare();
+       
     }
     
     public HealthBar getHealthBar()
@@ -54,10 +55,22 @@ public class MyWorld extends World
         {
             scroll(-5);
         }
+        
+        
+         if(jeda>0)jeda--;
+        else jeda=20;
+        if(jeda==1)
+        {
+            int py = Greenfoot.getRandomNumber(getHeight());
+            addObject(new Enemy(-(2+Greenfoot.getRandomNumber(3))), getWidth()+200,py);
+        }
     }
     
+    
+    
+    
 
-    public void prepare()
+    /*public void prepare()
     {
         addObject(hb, 300, 40);
         Enemy[] bee = new Enemy[5];
@@ -69,6 +82,6 @@ public class MyWorld extends World
             addObject(bee[i], beeX, beeY);
         }
     
-    }
+    }*/
 
 }

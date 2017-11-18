@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import java.util.*;
 import greenfoot.*;
 
@@ -60,13 +59,13 @@ public class ninja extends Actor
      */
     private void fire()
     {
-        if (fireflag && ! shuflag) {
-            fireballs suri1 =  new fireballs();
+        if (fireflag &&  ! shuflag) {
+            fireballs suri1 =  new  fireballs();
             getWorld().addObject(suri1, getX(), getY());
             suri1.setRotation(getRotation());
         }
-        if (shuflag && ! fireflag) {
-            Shuriken suri1 =  new Shuriken();
+        if (shuflag &&  ! fireflag) {
+            Shuriken suri1 =  new  Shuriken();
             getWorld().addObject(suri1, getX(), getY());
             suri1.setRotation(getRotation());
         }
@@ -172,7 +171,7 @@ public class ninja extends Actor
     public void checkobstacles()
     {
         Actor bricks = getOneIntersectingObject(Bricks.class);
-        if (bricks != null && ! onGround()) {
+        if (bricks != null &&  ! onGround()) {
             move(-5);
         }
     }

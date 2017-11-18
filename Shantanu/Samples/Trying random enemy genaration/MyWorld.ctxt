@@ -9,6 +9,4 @@ comment3.params=direction
 comment3.target=void\ scroll(int)
 comment4.params=
 comment4.target=void\ act()
-comment5.params=
-comment5.target=void\ prepare()
-numComments=6
+numComments=5

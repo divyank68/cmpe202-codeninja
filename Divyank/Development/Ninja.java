@@ -55,7 +55,7 @@ public class Ninja extends Actor
         if(shots==0)
         {
             World world=getWorld();
-            Greenfoot.stop();
+            //Greenfoot.stop();
             if(world!=null)
             {
                 world.removeObjects(world.getObjects(null));

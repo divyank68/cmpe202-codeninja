@@ -6,8 +6,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Person extends Background1
+public class Person extends Actor
 {
+   //Counter counter=new Counter();
+     private int targetx = 0, targety=0;
+    private int jeda= 0;
+    private boolean toRemove= false;
     boolean touch = false;
      private int vSpeed=0;
      private int acceleration= 1;
@@ -25,6 +29,22 @@ public class Person extends Background1
         checkFall();
     
     } 
+        public void Hancur()
+{
+    for(int i=0; i<10; i++)
+
+    {
+        int px=Greenfoot.getRandomNumber(40);
+        int py=Greenfoot.getRandomNumber(40);
+        getWorld().addObject(new Poc(getImage()), getX()+px, getY()+py);
+    }
+    getWorld().addObject(new Boc(), getX(), getY());
+    toRemove=true;
+    if(toRemove){
+        getWorld().removeObject(this);
+        
+    }
+}
     
     public void checkKeys()
     {
@@ -78,7 +98,8 @@ public class Person extends Background1
                 hb.looseHealth();
                 touch =true;
             }
-            //myWorld.removeObject(ths);
+            myWorld.removeObject(this);
+            //counter.addScore();
         }
     }
 }
