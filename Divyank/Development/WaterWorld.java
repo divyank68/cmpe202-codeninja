@@ -14,6 +14,7 @@ public class WaterWorld extends World
     private final int LEFT_BOUNDARY = -300;
     private final int RIGHT_BOUNDARY = 600;
     GreenfootSound myMusic= new GreenfootSound("Underwater Theme.mp3");
+    
     /**
      * Constructor for objects of class WaterWorld.
      * 
@@ -43,7 +44,13 @@ public class WaterWorld extends World
         //addObject(f8, 600, 80);
         addObject(f2, 450, 350);
         addObject(f10, 350, 350);
-        addObject(hb, 60, 15);
+        //addObject(hb, 60, 15);
+        Mermaid m=new Mermaid();
+        addObject(m,500,25);
+        Bubbles b = new Bubbles();
+        addObject(b,500,25);
+        
+
     }
      public void scroll(int direction)
     {

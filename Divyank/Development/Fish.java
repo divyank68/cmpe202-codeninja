@@ -20,5 +20,5 @@ public class Fish extends Actor
         if ((direction < 0 && getY() == 0) || (direction > 0 && getY() == getWorld().getHeight()-1)) direction = -direction;  
         // movement
         setLocation(getX(), getY() + direction);
-    }    
+    }  
 }

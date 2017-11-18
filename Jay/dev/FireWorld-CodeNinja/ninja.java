@@ -47,11 +47,13 @@ public class ninja extends Actor
         getFireballs();
         getShriken();
         checkobstacles();
-        if (isTouching(barrier.class) || isTouching(Bomb.class)) {
+        if (isTouching(barrier.class) || isTouching(Bomb.class)||isTouching(barrel.class)) {
             getWorld().removeObject(this);
             return;
             
         }
+        getWorld().showText("fireballs:"+fireballs,100,30);
+        getWorld().showText("Shuriken:"+shuriken,200,30);
     }
 
     /**
@@ -59,6 +61,7 @@ public class ninja extends Actor
      */
     private void fire()
     {
+<<<<<<< HEAD
         if (fireflag &&  ! shuflag) {
             fireballs suri1 =  new  fireballs();
             getWorld().addObject(suri1, getX(), getY());
@@ -66,9 +69,31 @@ public class ninja extends Actor
         }
         if (shuflag &&  ! fireflag) {
             Shuriken suri1 =  new  Shuriken();
+=======
+         if (shuriken > 0){
+            fireShuri();
+            shuriken = shuriken-1;
+        }
+        if (fireballs > 0) {
+            fireBalls();
+            fireballs =fireballs-1;
+        }
+    }
+     public void fireBalls()
+    {
+       Wall fire =  new  Wall();
+            getWorld().addObject(fire, getX(), getY());
+            fire.setRotation(getRotation()); 
+            fireflag= false;
+    }
+    
+     public void fireShuri()
+    {
+       Wall suri1 =  new  Wall();
+>>>>>>> c6b75214c16f104b109a9d3e62ce103ca202d058
             getWorld().addObject(suri1, getX(), getY());
             suri1.setRotation(getRotation());
-        }
+            shuflag =false;
     }
 
     /**

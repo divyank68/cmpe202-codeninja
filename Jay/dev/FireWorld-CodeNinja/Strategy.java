@@ -7,6 +7,6 @@
 public interface Strategy  
 {
   
-    public Strategy getPowerobject();
+     public int getPowerobject();
     
 }

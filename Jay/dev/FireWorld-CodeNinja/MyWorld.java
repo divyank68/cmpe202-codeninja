@@ -44,6 +44,7 @@ public class MyWorld extends World
         barrier br2 =  new barrier();
         Bomb bomb1 =  new Bomb();
         end end =  new end();
+        barrel brl1 =  new barrel();
         addObject(b1, 430, 280);
         addObject(b2, 150, 280);
         addObject(b3, 300, 190);
@@ -65,5 +66,6 @@ public class MyWorld extends World
         addObject(br2, 290, 380);
         addObject(bomb1, 450, 80);
         addObject(end, 565, 69);
+        addObject(brl1, 150, 75);
     }
 }

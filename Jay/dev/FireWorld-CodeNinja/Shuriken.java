@@ -4,7 +4,7 @@ import greenfoot.*;
 /**
  * 
  */
-public class Shuriken extends Actor
+public class Shuriken extends Actor implements Strategy
 {
     private int life = Greenfoot.getRandomNumber(10) + 20;
 
@@ -19,5 +19,10 @@ public class Shuriken extends Actor
             move(10);
             life = life - 1;
         }
+    }
+     public int getPowerobject()
+    {
+         return 5;
+        
     }
 }

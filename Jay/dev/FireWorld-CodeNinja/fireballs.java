@@ -21,9 +21,9 @@ public class fireballs extends Actor implements Strategy
         }
     }
     
-     public Strategy getPowerobject()
+     public int getPowerobject()
     {
-         return new fireballs();
+         return 5;
         
     }
 }
