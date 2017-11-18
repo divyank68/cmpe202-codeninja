@@ -12,12 +12,13 @@ public class Monster extends Actor
      * Act - do whatever the Monster wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void oscilate(){
     int gradient = 2;
+    public void oscilate(){
+    
         if(this.getY()>50){
        gradient = -2;
     }
-    if(this.getY()<750){
+    if(this.getY()<650){
        gradient = 2;
     }
      this.setLocation(this.getX(), this.getY()+gradient);
