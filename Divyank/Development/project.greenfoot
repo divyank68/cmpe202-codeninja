@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Fri Nov 17 21:09:13 PST 2017
+#Fri Nov 17 22:03:47 PST 2017
 dependency9.type=UsesDependency
 target4.type=ClassTarget
 <<<<<<<=HEAD
@@ -38,6 +38,7 @@ target2.width=90
 class.HealthBar.image=healthbar.png
 target5.name=Splash
 class.Ninja.image=chck.png
+class.Bubbles.image=bubbles.gif
 version=3.0.0
 class.Splash.superclass=greenfoot.Actor
 target6.type=ClassTarget
@@ -46,6 +47,7 @@ target7.width=80
 dependency5.from=Splash
 dependency2.to=HealthBar
 target1.width=80
+class.GifImage.superclass=
 dependency5.type=UsesDependency
 editor.fx.0.y=-4
 editor.fx.0.x=275
@@ -131,6 +133,7 @@ target2.showInterface=false
 dependency11.from=WaterWorld
 target3.name=HealthBar
 target7.height=50
+class.Bubbles.superclass=greenfoot.Actor
 target6.showInterface=false
 dependency11.type=UsesDependency
 dependency9.from=WaterWorld
