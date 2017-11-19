@@ -63,3 +63,13 @@ Week-7:
   team members to implement these changes and make our game more integrated. Also, we have decided to make one last integrated stage
   on which every one can work. We devided the work that has to be done by individuals. Also, I made a priority list for the last
   stage so that no work will remain pending.    
+
+Week-8:
+
+*  As week 8 was supposed to be the last week, we had so much work to do like integration and refactoring. So to cover all the required
+   tasks, I made priority list/ list for the task to be completed. We followed the priority list and were able to complete all the desired
+   functionalities. Integration code was the most complex task we faced as integration require code changes to every team member's code.
+   For that, I provided the courage to my team members to accept the changes and integrate the code. Also, refactoring the code was a big
+   challange, but with good collabration we were able to handle that task easily.   
+   
+  
