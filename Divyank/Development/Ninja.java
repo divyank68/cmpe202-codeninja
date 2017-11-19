@@ -54,20 +54,11 @@ public class Ninja extends Actor
         }
         if(shots==0)
         {
-<<<<<<< HEAD
+
             World world=getWorld();
             //Greenfoot.stop();
-            if(world!=null)
-            {
-                world.removeObjects(world.getObjects(null));
-                world.setBackground("GameOver.jpeg");
             
-            
-            }
-            
-=======
-            //World world=getWorld();
->>>>>>> c6b75214c16f104b109a9d3e62ce103ca202d058
+
             
         }
     }
