@@ -108,12 +108,12 @@ public class Person extends Actor
         {
             World myWorld = getWorld();
             MyWorld mw = (MyWorld)myWorld;
-            HealthBar hb=mw.getHealthBar();
+           /* HealthBar hb=mw.getHealthBar();
             if(touch == false)
             {
                 hb.looseHealth();
                 touch =true;
-            }
+            }*/
             myWorld.removeObject(this);
            
             //counter.addScore();

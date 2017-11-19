@@ -8,7 +8,7 @@ public class MyWorld extends World
     
     private Background1[] bg = new Background1[3];
     
-    HealthBar hb = new HealthBar();
+   // HealthBar hb = new HealthBar();
     
     private final int LEFT_BOUNDARY = -300;
     private final int RIGHT_BOUNDARY = 900;
@@ -28,15 +28,15 @@ public class MyWorld extends World
             x=x+ 600;
         }
         addObject( new Person(), getWidth()/2, 190);
-        addObject(hb, 300, 40);
+       // addObject(hb, 300, 40);
        
     }
     
-    public HealthBar getHealthBar()
+   /* public HealthBar getHealthBar()
     {
         return hb;
         
-    }
+    }*/
    
     public void scroll(int direction)
     {
@@ -71,18 +71,18 @@ public class MyWorld extends World
     
     
 
-    public void prepare()
+    /*public void prepare()
     {
         addObject(hb, 300, 40);
-       /* Enemy[] bee = new Enemy[5];
+        Enemy[] bee = new Enemy[5];
         for(int i=0; i<bee.length; i++)
         {
             bee[i] = new Enemy();
             int beeX = Greenfoot.getRandomNumber(getWidth());
             int beeY = Greenfoot.getRandomNumber(getHeight());
             addObject(bee[i], beeX, beeY);
-        }*/
+        }
     
-    }
+    }*/
 
 }
