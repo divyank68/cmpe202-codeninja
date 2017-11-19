@@ -61,15 +61,8 @@ public class ninja extends Actor
      */
     private void fire()
     {
-<<<<<<< HEAD
-        if (fireflag &&  ! shuflag) {
-            fireballs suri1 =  new  fireballs();
-            getWorld().addObject(suri1, getX(), getY());
-            suri1.setRotation(getRotation());
-        }
-        if (shuflag &&  ! fireflag) {
-            Shuriken suri1 =  new  Shuriken();
-=======
+
+  
          if (shuriken > 0){
             fireShuri();
             shuriken = shuriken-1;
@@ -79,6 +72,7 @@ public class ninja extends Actor
             fireballs =fireballs-1;
         }
     }
+   
      public void fireBalls()
     {
        Wall fire =  new  Wall();
@@ -90,7 +84,7 @@ public class ninja extends Actor
      public void fireShuri()
     {
        Wall suri1 =  new  Wall();
->>>>>>> c6b75214c16f104b109a9d3e62ce103ca202d058
+
             getWorld().addObject(suri1, getX(), getY());
             suri1.setRotation(getRotation());
             shuflag =false;

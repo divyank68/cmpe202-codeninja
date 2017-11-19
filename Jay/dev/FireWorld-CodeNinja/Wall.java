@@ -1,4 +1,3 @@
-// WARNING: This file is auto-generated and any changes to it will be overwritten
 import java.util.*;
 import greenfoot.*;
 
@@ -13,5 +12,13 @@ public class Wall extends Actor
      */
     public void act()
     {
+    }
+    
+     public void killwall()
+    {
+        if (isTouching(barrel.class)) {
+            removeTouching(barrel.class);
+            getWorld().removeObject(this);
+        }
     }
 }
