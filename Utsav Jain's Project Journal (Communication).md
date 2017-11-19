@@ -20,3 +20,6 @@ This week we decided to finally integrate. So, we will need to meet more frequen
 
 #Week 7
 This was the penultimate week and thus the heat was on high. We worked together and pooled our work together and have now created an integrated product. Since scurm facilitates methods for effective communication, there was less difficulty in figuring out a way to talk. The next week will be our last. All loose will need to be found and dealt with. We will need to finish our diagrams and personal requirements. 
+
+#WEEK 8 
+This week went in the preparation for the Hackaton. We studied design patterns together as a team for that, however we did that in Javascript, so that wasn't very usefull. This was a really good excercise for enhancing communication in the team. Having to have to do a tremendious amount of work in such a short period of time forced the team members to communicate and collaborate. It was good practice for improving our technical skills as well. 
