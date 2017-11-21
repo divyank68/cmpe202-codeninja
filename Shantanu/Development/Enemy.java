@@ -27,7 +27,9 @@ public class Enemy extends Actor
         if(actor!=null)
         {
             ((Person)actor).Hancur();
-            Hancur();
+            World myWorld = getWorld();
+            MyWorld mw = (MyWorld)myWorld;
+            mw.Hancur();
         }
         if(getX()<-200 || getY()>(getWorld().getHeight()-114))
         {
@@ -35,18 +37,7 @@ public class Enemy extends Actor
              
     }
 }
-public void Hancur()
-{
-    for(int i=0; i<10; i++)
 
-    {
-        int px=Greenfoot.getRandomNumber(40);
-        int py=Greenfoot.getRandomNumber(40);
-        getWorld().addObject(new Poc(getImage()), getX()+px, getY()+py);
-    }
-    getWorld().addObject(new Boc(), getX(), getY());
-    toRemove=true;
-}
     public void act() 
     {
         if(!toRemove)move();

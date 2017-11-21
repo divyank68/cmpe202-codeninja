@@ -4,6 +4,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     private int jeda=0;
+     int px=Greenfoot.getRandomNumber(40);
+     int py=Greenfoot.getRandomNumber(40);
+    boolean toRemove=false;
     GreenfootSound myMusic= new GreenfootSound("Skip_-_01_-_HyperSpaceAdventure.mp3");
     
     private Background1[] bg = new Background1[3];
@@ -66,6 +69,23 @@ public class MyWorld extends World
             addObject(new Enemy(-(2+Greenfoot.getRandomNumber(3))), getWidth()+200,py);
         }
     }
+    
+    public void Hancur()
+{
+    Creator creator = new HurdleFactory();
+    
+    
+  
+    for(int i=0; i<10; i++)
+    {
+        
+        int px=Greenfoot.getRandomNumber(40);
+        int py=Greenfoot.getRandomNumber(40);
+        addObject(getActor(new Poc(getImage()), getX()+px, getY()+py));
+    }
+    addObject(new Boc(), getX(), getY());
+    toRemove=true;
+}
     
     
     
