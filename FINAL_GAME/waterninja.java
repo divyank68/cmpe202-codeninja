@@ -7,12 +7,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version (a version number or a date)
  */
 
-public class waterninja extends Actor
+public class waterninja extends Actor 
 {
     int y=0;
     int g=1;
     int shots=5;
-    
+    AccessSplash sp;
     
     /**
      * Act - do whatever the Ninja wants to do. This method is called whenever
@@ -23,6 +23,7 @@ public class waterninja extends Actor
         GreenfootImage image = getImage();  
         image.scale(60, 40);
         setImage(image);
+        sp=new AccessSplash();
     }
     public void act() 
     {
@@ -49,7 +50,7 @@ public class waterninja extends Actor
     {
         if(shots>0 && "space".equals(Greenfoot.getKey()))
         {
-            getWorld().addObject(new Splash(),getX(),getY());
+            getWorld().addObject(sp.returnNewSplash(),getX(),getY());
             shots--;
         }
         if(shots==0)
