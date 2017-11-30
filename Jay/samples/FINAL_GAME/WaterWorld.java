@@ -22,7 +22,7 @@ public class WaterWorld extends World
     public WaterWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(900, 600, 1); 
         
         waterninja n = new waterninja();
         Fish f1 = new Fish();
@@ -35,20 +35,20 @@ public class WaterWorld extends World
         Starfish f8 = new Starfish();
         Starfish f9 = new Starfish();
         Starfish f10 = new Starfish();
-        addObject(n, 10, 180);
-        addObject(f1, 80, 150);
-        addObject(f9, 150, 300);
-        addObject(f3, 230, 400);
-        addObject(f4, 400, 30);
-        addObject(f7, 500, 10);
+        addObject(n, 15, 270);
+        addObject(f1, 120, 225);
+        addObject(f9, 225, 450);
+        addObject(f3, 345, 600);
+        addObject(f4, 600, 45);
+        addObject(f7, 250, 15);
         //addObject(f8, 600, 80);
-        addObject(f2, 450, 350);
-        addObject(f10, 350, 350);
+        addObject(f2, 675, 525);
+        addObject(f10, 525, 525);
         //addObject(hb, 60, 15);
         Mermaid m=new Mermaid();
-        addObject(m,500,25);
+        addObject(m,750,38);
         Bubbles b = new Bubbles();
-        addObject(b,500,25);
+        addObject(b,750,38);
         
 
     }
