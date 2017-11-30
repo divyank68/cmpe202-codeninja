@@ -45,6 +45,7 @@ public class waterninja extends Actor
         checkKeys();
         checkObstacle();
         gameover();
+        levelup();
     }
     public void checkKeys()
     {
@@ -85,8 +86,22 @@ public class waterninja extends Actor
         {
             World world=getWorld();
             world.removeObjects(world.getObjects(null));
-            world.setBackground("GameOver.jpeg");
-            Greenfoot.stop();
+            Greenfoot.setWorld( new  GameOver());
+            //Greenfoot.stop();
+            //getMusic().stop;
+        }
+        
+    
+    }
+    
+     public void levelup()
+    {
+        
+        if(isTouching(Mermaid.class))
+        {
+           
+            Greenfoot.setWorld( new  levelup3());
+            //Greenfoot.stop();
             //getMusic().stop;
         }
         
