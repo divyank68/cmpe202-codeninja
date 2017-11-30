@@ -23,8 +23,8 @@ public class blob extends Actor
      */
     public void killwall()
     {
-        if (isTouching(Wall.class)) {
-            removeTouching(Wall.class);
+        if (isTouching(Bomb.class)) {
+            removeTouching(Bomb.class);
             getWorld().removeObject(this);
         }
     }

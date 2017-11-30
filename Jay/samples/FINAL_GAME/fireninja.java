@@ -49,6 +49,7 @@ public class fireninja extends Actor
         checkobstacles();
         if (isTouching(barrier.class) || isTouching(Bomb.class)||isTouching(barrel.class)) {
             getWorld().removeObject(this);
+            Greenfoot.setWorld( new  GameOver());
             return;
             
         }
@@ -79,7 +80,7 @@ public class fireninja extends Actor
    
      public void fireBalls()
     {
-       Wall fire =  new  Wall();
+       blob fire =  new  blob();
             getWorld().addObject(fire, getX(), getY());
             fire.setRotation(getRotation()); 
             fireflag= false;
