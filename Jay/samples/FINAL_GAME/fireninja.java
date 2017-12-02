@@ -13,6 +13,7 @@ public class fireninja extends Actor
     private int shuriken = 0;
     private boolean shuflag = false;
     private boolean fireflag = false;
+    private Strategy st;
 
     /**
      * Act - do whatever the ninja wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
@@ -53,8 +54,7 @@ public class fireninja extends Actor
             return;
             
         }
-        getWorld().showText("fireballs:"+fireballs,100,30);
-        getWorld().showText("Shuriken:"+shuriken,200,30);
+        
         if (isTouching(end.class))
         {
             Greenfoot.setWorld( new  levelup2());
@@ -155,7 +155,8 @@ public class fireninja extends Actor
         if (isTouching(fireballs.class)) {
             if (fireballs == 3) {
                 removeTouching(fireballs.class);
-                fireballs = fireballs + 1;
+                st= new fireballs();
+                fireballs=st.getPowerobject();
                 fireflag = true;
             }
             else {
@@ -171,7 +172,8 @@ public class fireninja extends Actor
     {
         if (isTouching(Shuriken.class)) {
             removeTouching(Shuriken.class);
-            shuriken = shuriken + 1;
+            st= new Shuriken();
+                shuriken=st.getPowerobject();
             shuflag = true;
             
         }

@@ -99,7 +99,7 @@ public class Person extends Actor
             mw.removeObject(this);
             GreenfootSound myMusic= new GreenfootSound("Banana Peel.mp3");
             //myMusic.stop();
-             //Greenfoot.setWorld( new  GameOver());
+             Greenfoot.setWorld( new  GameOver());
            myMusic1.play();
           
             //myWorld.removeObjects(myWorld.getObjects(null));

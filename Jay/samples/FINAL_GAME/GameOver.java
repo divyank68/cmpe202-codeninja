@@ -22,7 +22,7 @@ public class GameOver extends World
     {
         
         
-      
+        //getWorld().showText("Press Enter To Restart", 100, 580);
         if (Greenfoot.isKeyDown("enter")) {
             
             Greenfoot.setWorld( new  MyWorld());

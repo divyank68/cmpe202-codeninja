@@ -22,7 +22,7 @@ public class Shuriken extends Actor implements Strategy
     }
      public int getPowerobject()
     {
-         return 5;
+         return 1;
         
     }
 }
