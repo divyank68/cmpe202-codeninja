@@ -44,8 +44,18 @@ public class waterninja extends Actor
         y=y+g;
         checkKeys();
         checkObstacle();
-        gameover();
+        
         levelup();
+        
+        if(isTouching(Starfish.class))
+        {
+            World world=getWorld();
+            world.removeObjects(world.getObjects(null));
+            Greenfoot.setWorld( new  GameOver());
+            //Greenfoot.stop();
+            //getMusic().stop;
+            return;
+        }
     }
     public void checkKeys()
     {
