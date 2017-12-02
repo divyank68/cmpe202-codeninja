@@ -1,3 +1,4 @@
+import greenfoot.*;
 /**
  * Write a description of class AccessSplash here.
  * 
@@ -17,8 +18,13 @@ public class AccessSplash implements Proxy
         
     }
     
-    public Splash returnNewSplash()
+    public Splash returnNewSplash(Actor a)
     {
-        return new Splash();
+        if(a.getClass().getSimpleName()=="waterninja")
+        {
+            return new Splash();
+        }
+        return null;
+        
     }
 }

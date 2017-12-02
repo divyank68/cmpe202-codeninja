@@ -61,7 +61,7 @@ public class waterninja extends Actor
     {
         if(shots>0 && "space".equals(Greenfoot.getKey()))
         {
-            getWorld().addObject(sp.returnNewSplash(),getX(),getY());
+            getWorld().addObject(sp.returnNewSplash(this),getX(),getY());
             shots--;
         }
         if(shots==0)

@@ -1,3 +1,4 @@
+import greenfoot.*;
 /**
  * Write a description of class Proxy here.
  * 
@@ -8,7 +9,7 @@ public interface Proxy
 {
     // instance variables - replace the example below with your own
     
-    public Splash returnNewSplash();
+    public Splash returnNewSplash(Actor a);
 
     /**
      * Constructor for objects of class Proxy
