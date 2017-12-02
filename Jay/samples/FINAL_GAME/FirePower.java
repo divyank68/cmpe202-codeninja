@@ -1,17 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 
-public class Enemy extends Actor
+public class FirePower extends Actor
 {
     
     //Counter counter= new Counter();
     private int vx=0;
     public boolean toRemove= false;
-    public Enemy()
+    
+    public FirePower()
     {
     }
     
-    public Enemy(int v)
+    public FirePower(int v)
     {
         vx=v;
     }
@@ -55,5 +56,5 @@ public void Hancur()
         getWorld().removeObject(this);
          
         }
-    }    
+   }    
 }

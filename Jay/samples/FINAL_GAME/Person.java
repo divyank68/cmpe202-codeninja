@@ -11,6 +11,7 @@ public class Person extends Actor
     GreenfootSound myMusic1= new GreenfootSound("Banana Peel.mp3");
    GreenfootSound myMusic2= new GreenfootSound("Mortar Round.mp3");
     public int c=0;
+    int count=0;
    //Counter counter=new Counter();
      private int targetx = 0, targety=0;
     private int jeda= 0;
@@ -43,18 +44,36 @@ public class Person extends Actor
     }
     getWorld().addObject(new Boc(), getX(), getY());
     toRemove=true;
+    
     if(toRemove){
-        getWorld().removeObject(this);
         
-        //myMusic2.play();
+     if(isTouching(Enemy.class))
+        {
+       getWorld().removeObject(this);
+       Greenfoot.setWorld( new  GameOver());
     }
+    else 
+    {
+        count++;
+        if( count == 3)
+        {
+           Greenfoot.setWorld( new  levelup());
+        }
+    }
+   
+}
 }
     
     public void checkKeys()
     {
         if(Greenfoot.isKeyDown("space"))
         {
-            shoot();
+            //shoot();
+            int millis;
+            myMusic2.play();
+            RocketFactory rf = new RocketFactory();
+            getWorld().addObject(rf.createRocjet(millis = (int)System.currentTimeMillis() % 2), getX(), getY());
+            
         }
         
         if((Greenfoot.isKeyDown("up")==true) && (getY()>(getWorld().getHeight()-475)))
@@ -78,13 +97,12 @@ public class Person extends Actor
            World myWorld = getWorld();
             MyWorld mw = (MyWorld)myWorld;
             mw.removeObject(this);
-           GreenfootSound myMusic= new GreenfootSound("Banana Peel.mp3");
+            GreenfootSound myMusic= new GreenfootSound("Banana Peel.mp3");
+            //myMusic.stop();
+             //Greenfoot.setWorld( new  GameOver());
            myMusic1.play();
+          
             //myWorld.removeObjects(myWorld.getObjects(null));
-            // Changes for the final game
-            // addinb level up
-            Greenfoot.setWorld( new  levelup());
-            
         }
     }
    
@@ -112,12 +130,12 @@ public class Person extends Actor
         {
             World myWorld = getWorld();
             MyWorld mw = (MyWorld)myWorld;
-           /* HealthBar hb=mw.getHealthBar();
+           
             if(touch == false)
             {
-                hb.looseHealth();
+               
                 touch =true;
-            }*/
+            }
             myWorld.removeObject(this);
            
             //counter.addScore();

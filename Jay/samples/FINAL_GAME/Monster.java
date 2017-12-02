@@ -58,6 +58,7 @@ public class Monster extends Actor
         getWorld().showText("Health left: " + health, 820, 580);
         if(health<=0){
             getWorld().removeObject(this);
+            Greenfoot.setWorld( new  success());
         }
     }    
 }

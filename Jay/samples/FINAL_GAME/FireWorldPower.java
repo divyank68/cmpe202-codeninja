@@ -1,17 +1,17 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 
-public class Enemy extends Actor
+public class FireWorldPower extends Actor
 {
     
     //Counter counter= new Counter();
     private int vx=0;
     public boolean toRemove= false;
-    public Enemy()
+    public FireWorldPower()
     {
     }
     
-    public Enemy(int v)
+    public FireWorldPower(int v)
     {
         vx=v;
     }
@@ -31,7 +31,7 @@ public class Enemy extends Actor
         }
         if(getX()<-200 || getY()>(getWorld().getHeight()-114))
         {
-            toRemove=true;
+            //toRemove=true;
              
     }
 }
@@ -49,10 +49,10 @@ public void Hancur()
 }
     public void act() 
     {
-        if(!toRemove)move();
+        if(!toRemove)
+        move();
         else
-        {
-        getWorld().removeObject(this);
+        {getWorld().removeObject(this);
          
         }
     }    

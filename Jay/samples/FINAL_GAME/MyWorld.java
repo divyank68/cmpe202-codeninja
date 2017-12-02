@@ -8,35 +8,34 @@ public class MyWorld extends World
     
     private Background1[] bg = new Background1[3];
     
-   // HealthBar hb = new HealthBar();
     
+    FirePower fwp= new FirePower();
     private final int LEFT_BOUNDARY = -300;
     private final int RIGHT_BOUNDARY = 900;
-    /**
-     * Constructor for objects of class MyWorld.
-     * 
-     */
+   int counter=0;
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+     
         super(900, 600, 1, false);
         int x = LEFT_BOUNDARY;
+        int count=0;
+        
         for(int i=0; i<bg.length; i++)
         {
             bg[i] = new Background1();
-            addObject( bg[i], x, getHeight()/2 );
+            addObject( bg[i], x, getHeight()/2);
             x=x+ 600;
+           
+            
         }
         addObject( new Person(), getWidth()/2, 190);
-       // addObject(hb, 300, 40);
        
+        
+       //getWorld().addObject(fwp.create(millis = (int)System.currentTimeMillis() % 2), getX(), getY());
     }
     
-   /* public HealthBar getHealthBar()
-    {
-        return hb;
-        
-    }*/
+ 
    
     public void scroll(int direction)
     {
@@ -47,6 +46,8 @@ public class MyWorld extends World
     }
     public void act()
     {
+        counter++;
+        
         myMusic.play();
         if(Greenfoot.isKeyDown("left")) 
         {
@@ -56,33 +57,33 @@ public class MyWorld extends World
         {
             scroll(-5);
         }
-        
+        if(Greenfoot.isKeyDown("c")){
+        addObject(fwp, getWidth()/2, 290);
+    }
         
          if(jeda>0)jeda--;
         else jeda=20;
         if(jeda==1)
-        {
+        {  
             int py = Greenfoot.getRandomNumber(getHeight());
             addObject(new Enemy(-(2+Greenfoot.getRandomNumber(3))), getWidth()+200,py);
+           
+               
+//int py = Greenfoot.getRandomNumber(getHeight());//addObject(new FireWorldPower(), 500, 200);
+
+if (counter % 10 == 0)
+{
+            addObject(new FirePower(-(2+Greenfoot.getRandomNumber(10))), getWidth()+200,py);
+        
         }
+    }
+       
     }
     
     
     
     
 
-    /*public void prepare()
-    {
-        addObject(hb, 300, 40);
-        Enemy[] bee = new Enemy[5];
-        for(int i=0; i<bee.length; i++)
-        {
-            bee[i] = new Enemy();
-            int beeX = Greenfoot.getRandomNumber(getWidth());
-            int beeY = Greenfoot.getRandomNumber(getHeight());
-            addObject(bee[i], beeX, beeY);
-        }
-    
-    }*/
+   
 
 }

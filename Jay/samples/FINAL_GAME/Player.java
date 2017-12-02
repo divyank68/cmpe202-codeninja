@@ -70,6 +70,7 @@ public class Player extends Actor
     public void die(){
         if(this.health <= 0){
             getWorld().removeObject(this);
+            Greenfoot.setWorld( new  GameOver());
         }
     }
     public void act() 
