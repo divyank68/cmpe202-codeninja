@@ -51,7 +51,7 @@ public class waterninja extends Actor
         {
             World world=getWorld();
             world.removeObjects(world.getObjects(null));
-            Greenfoot.setWorld( new  GameOver());
+            Greenfoot.setWorld( new  GameOver3());
             //Greenfoot.stop();
             //getMusic().stop;
             return;

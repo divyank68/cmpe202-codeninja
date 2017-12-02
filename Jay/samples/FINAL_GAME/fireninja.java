@@ -49,7 +49,7 @@ public class fireninja extends Actor
         checkobstacles();
         if (isTouching(barrier.class) || isTouching(Bomb.class)||isTouching(barrel.class)) {
             getWorld().removeObject(this);
-            Greenfoot.setWorld( new  GameOver());
+            Greenfoot.setWorld( new  GameOver2());
             return;
             
         }
